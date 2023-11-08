@@ -1,0 +1,844 @@
+{
+  "sitemap": {
+    "baseUrl": "https://nrvllrgrs.github.io/toolkit.sensors/"
+  },
+  "source_base_path": "/home/runner/work/toolkit.sensors/toolkit.sensors/Documentation~",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.FOVCollider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.FOVCollider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.Sensors.BaseColliderSensorEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.Sensors.BaseColliderSensorEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.Sensors.BaseDetectionSensorEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.Sensors.BaseDetectionSensorEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.Sensors.BasePulseableSensorEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.Sensors.BasePulseableSensorEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.Sensors.BaseSensorEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.Sensors.BaseSensorEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.Sensors.FilterSensorEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.Sensors.FilterSensorEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.Sensors.MarkupSensorEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.Sensors.MarkupSensorEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.Sensors.PerceptionEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.Sensors.PerceptionEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.Sensors.RangeSensorEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.Sensors.RangeSensorEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.Sensors.RaySensorEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.Sensors.RaySensorEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.Sensors.SenseDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.Sensors.SenseDrawer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.Sensors.SignalSensorEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.Sensors.SignalSensorEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.Sensors.VisualScripting.Setup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.Sensors.VisualScripting.Setup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.Sensors.VisualScripting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.Sensors.VisualScripting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.Sensors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.Sensors.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.BaseColliderSensor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.BaseColliderSensor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.BaseDetectionSensor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.BaseDetectionSensor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.BasePulseableSensor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.BasePulseableSensor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.BaseSensor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.BaseSensor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.ColliderSensor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.ColliderSensor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.DetectionMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.DetectionMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.EventHooks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.EventHooks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.FilterSensor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.FilterSensor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.IPulseableSensor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.IPulseableSensor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.LOSTargets.Target.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.LOSTargets.Target.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.LOSTargets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.LOSTargets.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.LastKnownLocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.LastKnownLocation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.Markup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.Markup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.MarkupSensor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.MarkupSensor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.MarkupType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.MarkupType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.OccupantFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.OccupantFilter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.Perception.Sense.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.Perception.Sense.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.Perception.SenseType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.Perception.SenseType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.Perception.Stimulus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.Perception.Stimulus.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.Perception.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.Perception.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.PerceptionEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.PerceptionEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.PulseMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.PulseMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.RangeSensor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.RangeSensor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.RaySensor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.RaySensor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.ReserverFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.ReserverFilter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.SensorEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.SensorEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.SensorManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.SensorManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.SensorPulse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.SensorPulse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.SignaTypeEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.SignaTypeEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.Signal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.Signal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.SignalBroadcaster.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.SignalBroadcaster.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.SignalSensor.ForgetMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.SignalSensor.ForgetMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.SignalSensor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.SignalSensor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.SignalType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.SignalType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.StimulusAgeEvaluator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.StimulusAgeEvaluator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.StimulusStrengthEvaluator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.StimulusStrengthEvaluator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.TriggerSensor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.TriggerSensor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.VacancyFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.VacancyFilter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.VisualScripting.BasePerceptionEventUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.VisualScripting.BasePerceptionEventUnit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.VisualScripting.BaseSensorEventUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.VisualScripting.BaseSensorEventUnit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnPerceptionDisturbance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnPerceptionDisturbance.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnPerceptionDisturbanceMessageListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnPerceptionDisturbanceMessageListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnPerceptionKnown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnPerceptionKnown.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnPerceptionKnownMessageListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnPerceptionKnownMessageListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnPerceptionStimulusConfidenceChanged.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnPerceptionStimulusConfidenceChanged.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnPerceptionStimulusConfidenceChangedMessageListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnPerceptionStimulusConfidenceChangedMessageListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnPerceptionUnknown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnPerceptionUnknown.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnPerceptionUnknownMessageListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnPerceptionUnknownMessageListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnSensorFirstDetection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnSensorFirstDetection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnSensorFirstDetectionMessageListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnSensorFirstDetectionMessageListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnSensorLastUndetection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnSensorLastUndetection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnSensorLastUndetectionMessageListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnSensorLastUndetectionMessageListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnSensorSignalDetected.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnSensorSignalDetected.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnSensorSignalDetectedMessageListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnSensorSignalDetectedMessageListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnSensorSignalUndetected.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnSensorSignalUndetected.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnSensorSignalUndetectedMessageListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.VisualScripting.OnSensorSignalUndetectedMessageListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.VisualScripting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.VisualScripting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "license/LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "license/LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "license/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "license/toc.html"
+        },
+        ".json": {
+          "relative_path": "license/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

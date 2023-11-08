@@ -1,0 +1,1079 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class BaseSensor
+ | Sensor Toolkit | 1.0.0 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class BaseSensor
+ | Sensor Toolkit | 1.0.0 ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      <meta name="docfx:disablenewtab" content="true">
+      
+      <meta name="docfx:docurl" content="https://github.com/nrvllrgrs/toolkit.sensors/new/master/apiSpec/new?filename=ToolkitEngine_Sensors_BaseSensor.md&amp;value=---%0Auid%3A%20ToolkitEngine.Sensors.BaseSensor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ToolkitEngine.Sensors.BaseSensor">
+
+
+
+  <h1 id="ToolkitEngine_Sensors_BaseSensor" data-uid="ToolkitEngine.Sensors.BaseSensor" class="text-break">
+    Class BaseSensor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ToolkitEngine.html">ToolkitEngine</a>.<a class="xref" href="ToolkitEngine.Sensors.html">Sensors</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BaseSensor : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">BaseSensor</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="ToolkitEngine.Sensors.BaseDetectionSensor.html">BaseDetectionSensor</a></div>
+      <div><a class="xref" href="ToolkitEngine.Sensors.FilterSensor.html">FilterSensor</a></div>
+      <div><a class="xref" href="ToolkitEngine.Sensors.MarkupSensor.html">MarkupSensor</a></div>
+      <div><a class="xref" href="ToolkitEngine.Sensors.SignalSensor.html">SignalSensor</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_m_filters" data-uid="ToolkitEngine.Sensors.BaseSensor.m_filters">
+  m_filters
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected UnityEvaluator m_filters</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvaluator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_m_signals" data-uid="ToolkitEngine.Sensors.BaseSensor.m_signals">
+  m_signals
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Dictionary&lt;GameObject, Signal&gt; m_signals</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<span class="xref">GameObject</span>, <a class="xref" href="ToolkitEngine.Sensors.Signal.html">Signal</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_m_strengthCalculator" data-uid="ToolkitEngine.Sensors.BaseSensor.m_strengthCalculator">
+  m_strengthCalculator
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected UnityEvaluator m_strengthCalculator</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvaluator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_anySignal_" data-uid="ToolkitEngine.Sensors.BaseSensor.anySignal*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_anySignal" data-uid="ToolkitEngine.Sensors.BaseSensor.anySignal">
+  anySignal
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool anySignal { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_closestSignal_" data-uid="ToolkitEngine.Sensors.BaseSensor.closestSignal*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_closestSignal" data-uid="ToolkitEngine.Sensors.BaseSensor.closestSignal">
+  closestSignal
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Signal closestSignal { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ToolkitEngine.Sensors.Signal.html">Signal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_filters_" data-uid="ToolkitEngine.Sensors.BaseSensor.filters*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_filters" data-uid="ToolkitEngine.Sensors.BaseSensor.filters">
+  filters
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvaluator filters { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvaluator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_keys_" data-uid="ToolkitEngine.Sensors.BaseSensor.keys*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_keys" data-uid="ToolkitEngine.Sensors.BaseSensor.keys">
+  keys
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject[] keys { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_onFirstDetection_" data-uid="ToolkitEngine.Sensors.BaseSensor.onFirstDetection*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_onFirstDetection" data-uid="ToolkitEngine.Sensors.BaseSensor.onFirstDetection">
+  onFirstDetection
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent&lt;SensorEventArgs&gt; onFirstDetection { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span>&lt;<a class="xref" href="ToolkitEngine.Sensors.SensorEventArgs.html">SensorEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_onLastUndetection_" data-uid="ToolkitEngine.Sensors.BaseSensor.onLastUndetection*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_onLastUndetection" data-uid="ToolkitEngine.Sensors.BaseSensor.onLastUndetection">
+  onLastUndetection
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent&lt;SensorEventArgs&gt; onLastUndetection { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span>&lt;<a class="xref" href="ToolkitEngine.Sensors.SensorEventArgs.html">SensorEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_onSignalDetected_" data-uid="ToolkitEngine.Sensors.BaseSensor.onSignalDetected*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_onSignalDetected" data-uid="ToolkitEngine.Sensors.BaseSensor.onSignalDetected">
+  onSignalDetected
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent&lt;SensorEventArgs&gt; onSignalDetected { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span>&lt;<a class="xref" href="ToolkitEngine.Sensors.SensorEventArgs.html">SensorEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_onSignalUndetected_" data-uid="ToolkitEngine.Sensors.BaseSensor.onSignalUndetected*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_onSignalUndetected" data-uid="ToolkitEngine.Sensors.BaseSensor.onSignalUndetected">
+  onSignalUndetected
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent&lt;SensorEventArgs&gt; onSignalUndetected { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span>&lt;<a class="xref" href="ToolkitEngine.Sensors.SensorEventArgs.html">SensorEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_set_" data-uid="ToolkitEngine.Sensors.BaseSensor.set*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_set" data-uid="ToolkitEngine.Sensors.BaseSensor.set">
+  set
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Set set { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Set</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_signals_" data-uid="ToolkitEngine.Sensors.BaseSensor.signals*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_signals" data-uid="ToolkitEngine.Sensors.BaseSensor.signals">
+  signals
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Signal[] signals { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ToolkitEngine.Sensors.Signal.html">Signal</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_strengthCalculator_" data-uid="ToolkitEngine.Sensors.BaseSensor.strengthCalculator*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_strengthCalculator" data-uid="ToolkitEngine.Sensors.BaseSensor.strengthCalculator">
+  strengthCalculator
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvaluator strengthCalculator { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvaluator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_strongestSignal_" data-uid="ToolkitEngine.Sensors.BaseSensor.strongestSignal*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_strongestSignal" data-uid="ToolkitEngine.Sensors.BaseSensor.strongestSignal">
+  strongestSignal
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Signal strongestSignal { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ToolkitEngine.Sensors.Signal.html">Signal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_AddSignal_" data-uid="ToolkitEngine.Sensors.BaseSensor.AddSignal*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_AddSignal_GameObject_System_Single_ToolkitEngine_Sensors_SignalType_" data-uid="ToolkitEngine.Sensors.BaseSensor.AddSignal(GameObject,System.Single,ToolkitEngine.Sensors.SignalType)">
+  AddSignal(GameObject, float, SignalType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSignal(GameObject detected, float strength, SignalType signalType = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>detected</code> <span class="xref">GameObject</span></dt>
+    <dd></dd>
+    <dt><code>strength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>signalType</code> <a class="xref" href="ToolkitEngine.Sensors.SignalType.html">SignalType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_AddSignal_" data-uid="ToolkitEngine.Sensors.BaseSensor.AddSignal*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_AddSignal_GameObject_ToolkitEngine_Sensors_SignalType_" data-uid="ToolkitEngine.Sensors.BaseSensor.AddSignal(GameObject,ToolkitEngine.Sensors.SignalType)">
+  AddSignal(GameObject, SignalType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSignal(GameObject detected, SignalType signalType = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>detected</code> <span class="xref">GameObject</span></dt>
+    <dd></dd>
+    <dt><code>signalType</code> <a class="xref" href="ToolkitEngine.Sensors.SignalType.html">SignalType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_AddSignal_" data-uid="ToolkitEngine.Sensors.BaseSensor.AddSignal*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_AddSignal_ToolkitEngine_Sensors_Signal_" data-uid="ToolkitEngine.Sensors.BaseSensor.AddSignal(ToolkitEngine.Sensors.Signal)">
+  AddSignal(Signal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSignal(Signal signal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>signal</code> <a class="xref" href="ToolkitEngine.Sensors.Signal.html">Signal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_CleanSignals_" data-uid="ToolkitEngine.Sensors.BaseSensor.CleanSignals*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_CleanSignals" data-uid="ToolkitEngine.Sensors.BaseSensor.CleanSignals">
+  CleanSignals()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L250"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CleanSignals()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_ClearSignals_" data-uid="ToolkitEngine.Sensors.BaseSensor.ClearSignals*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_ClearSignals" data-uid="ToolkitEngine.Sensors.BaseSensor.ClearSignals">
+  ClearSignals()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearSignals()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_GetFilteredObject_" data-uid="ToolkitEngine.Sensors.BaseSensor.GetFilteredObject*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_GetFilteredObject_GameObject_" data-uid="ToolkitEngine.Sensors.BaseSensor.GetFilteredObject(GameObject)">
+  GetFilteredObject(GameObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GameObject GetFilteredObject(GameObject detected)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>detected</code> <span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_IsDetecting_" data-uid="ToolkitEngine.Sensors.BaseSensor.IsDetecting*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_IsDetecting_GameObject_System_Boolean_" data-uid="ToolkitEngine.Sensors.BaseSensor.IsDetecting(GameObject,System.Boolean)">
+  IsDetecting(GameObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L292"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDetecting(GameObject obj, bool includeChildren = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <span class="xref">GameObject</span></dt>
+    <dd></dd>
+    <dt><code>includeChildren</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_IsIncluded_" data-uid="ToolkitEngine.Sensors.BaseSensor.IsIncluded*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_IsIncluded_GameObject_" data-uid="ToolkitEngine.Sensors.BaseSensor.IsIncluded(GameObject)">
+  IsIncluded(GameObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsIncluded(GameObject detected)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>detected</code> <span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_RemoveSignal_" data-uid="ToolkitEngine.Sensors.BaseSensor.RemoveSignal*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_RemoveSignal_GameObject_" data-uid="ToolkitEngine.Sensors.BaseSensor.RemoveSignal(GameObject)">
+  RemoveSignal(GameObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RemoveSignal(GameObject detected)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>detected</code> <span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_TryAddSignalToMap_" data-uid="ToolkitEngine.Sensors.BaseSensor.TryAddSignalToMap*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_TryAddSignalToMap_GameObject_System_Single_ToolkitEngine_Sensors_SignalType_System_Collections_Generic_Dictionary_GameObject_ToolkitEngine_Sensors_Signal__ToolkitEngine_Sensors_Signal__" data-uid="ToolkitEngine.Sensors.BaseSensor.TryAddSignalToMap(GameObject,System.Single,ToolkitEngine.Sensors.SignalType,System.Collections.Generic.Dictionary{GameObject,ToolkitEngine.Sensors.Signal},ToolkitEngine.Sensors.Signal@)">
+  TryAddSignalToMap(GameObject, float, SignalType, Dictionary&lt;GameObject, Signal&gt;, out Signal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryAddSignalToMap(GameObject detected, float strength, SignalType signalType, Dictionary&lt;GameObject, Signal&gt; map, out Signal signal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>detected</code> <span class="xref">GameObject</span></dt>
+    <dd></dd>
+    <dt><code>strength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>signalType</code> <a class="xref" href="ToolkitEngine.Sensors.SignalType.html">SignalType</a></dt>
+    <dd></dd>
+    <dt><code>map</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<span class="xref">GameObject</span>, <a class="xref" href="ToolkitEngine.Sensors.Signal.html">Signal</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>signal</code> <a class="xref" href="ToolkitEngine.Sensors.Signal.html">Signal</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_TryGetClosetTarget_" data-uid="ToolkitEngine.Sensors.BaseSensor.TryGetClosetTarget*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_TryGetClosetTarget_Vector3__" data-uid="ToolkitEngine.Sensors.BaseSensor.TryGetClosetTarget(Vector3@)">
+  TryGetClosetTarget(out Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetClosetTarget(out Vector3 target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_TryGetSignalTarget_" data-uid="ToolkitEngine.Sensors.BaseSensor.TryGetSignalTarget*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_TryGetSignalTarget_ToolkitEngine_Sensors_Signal_Vector3__" data-uid="ToolkitEngine.Sensors.BaseSensor.TryGetSignalTarget(ToolkitEngine.Sensors.Signal,Vector3@)">
+  TryGetSignalTarget(Signal, out Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L272"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetSignalTarget(Signal signal, out Vector3 target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>signal</code> <a class="xref" href="ToolkitEngine.Sensors.Signal.html">Signal</a></dt>
+    <dd></dd>
+    <dt><code>target</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_BaseSensor_TryGetStrongestTarget_" data-uid="ToolkitEngine.Sensors.BaseSensor.TryGetStrongestTarget*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_BaseSensor_TryGetStrongestTarget_Vector3__" data-uid="ToolkitEngine.Sensors.BaseSensor.TryGetStrongestTarget(Vector3@)">
+  TryGetStrongestTarget(out Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/BaseSensor.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetStrongestTarget(out Vector3 target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made by <a href="https://github.com/nrvllrgrs" target="_blank">nrvllrgrs</a> using <a href="https://dotnet.github.io/docfx" target="_blank">DocFX</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
