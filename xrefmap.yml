@@ -482,6 +482,56 @@ references:
   commentId: F:ToolkitEditor.Sensors.FilterSensorEditor.m_sensor
   fullName: ToolkitEditor.Sensors.FilterSensorEditor.m_sensor
   nameWithType: FilterSensorEditor.m_sensor
+- uid: ToolkitEditor.Sensors.MarkupEditor
+  name: MarkupEditor
+  href: api/ToolkitEditor.Sensors.MarkupEditor.html
+  commentId: T:ToolkitEditor.Sensors.MarkupEditor
+  fullName: ToolkitEditor.Sensors.MarkupEditor
+  nameWithType: MarkupEditor
+- uid: ToolkitEditor.Sensors.MarkupEditor.DrawEvents
+  name: DrawEvents()
+  href: api/ToolkitEditor.Sensors.MarkupEditor.html#ToolkitEditor_Sensors_MarkupEditor_DrawEvents
+  commentId: M:ToolkitEditor.Sensors.MarkupEditor.DrawEvents
+  fullName: ToolkitEditor.Sensors.MarkupEditor.DrawEvents()
+  nameWithType: MarkupEditor.DrawEvents()
+- uid: ToolkitEditor.Sensors.MarkupEditor.DrawEvents*
+  name: DrawEvents
+  href: api/ToolkitEditor.Sensors.MarkupEditor.html#ToolkitEditor_Sensors_MarkupEditor_DrawEvents_
+  commentId: Overload:ToolkitEditor.Sensors.MarkupEditor.DrawEvents
+  isSpec: "True"
+  fullName: ToolkitEditor.Sensors.MarkupEditor.DrawEvents
+  nameWithType: MarkupEditor.DrawEvents
+- uid: ToolkitEditor.Sensors.MarkupEditor.DrawProperties
+  name: DrawProperties()
+  href: api/ToolkitEditor.Sensors.MarkupEditor.html#ToolkitEditor_Sensors_MarkupEditor_DrawProperties
+  commentId: M:ToolkitEditor.Sensors.MarkupEditor.DrawProperties
+  fullName: ToolkitEditor.Sensors.MarkupEditor.DrawProperties()
+  nameWithType: MarkupEditor.DrawProperties()
+- uid: ToolkitEditor.Sensors.MarkupEditor.DrawProperties*
+  name: DrawProperties
+  href: api/ToolkitEditor.Sensors.MarkupEditor.html#ToolkitEditor_Sensors_MarkupEditor_DrawProperties_
+  commentId: Overload:ToolkitEditor.Sensors.MarkupEditor.DrawProperties
+  isSpec: "True"
+  fullName: ToolkitEditor.Sensors.MarkupEditor.DrawProperties
+  nameWithType: MarkupEditor.DrawProperties
+- uid: ToolkitEditor.Sensors.MarkupEditor.m_onSignalDetected
+  name: m_onSignalDetected
+  href: api/ToolkitEditor.Sensors.MarkupEditor.html#ToolkitEditor_Sensors_MarkupEditor_m_onSignalDetected
+  commentId: F:ToolkitEditor.Sensors.MarkupEditor.m_onSignalDetected
+  fullName: ToolkitEditor.Sensors.MarkupEditor.m_onSignalDetected
+  nameWithType: MarkupEditor.m_onSignalDetected
+- uid: ToolkitEditor.Sensors.MarkupEditor.m_onSignalUndetected
+  name: m_onSignalUndetected
+  href: api/ToolkitEditor.Sensors.MarkupEditor.html#ToolkitEditor_Sensors_MarkupEditor_m_onSignalUndetected
+  commentId: F:ToolkitEditor.Sensors.MarkupEditor.m_onSignalUndetected
+  fullName: ToolkitEditor.Sensors.MarkupEditor.m_onSignalUndetected
+  nameWithType: MarkupEditor.m_onSignalUndetected
+- uid: ToolkitEditor.Sensors.MarkupEditor.m_type
+  name: m_type
+  href: api/ToolkitEditor.Sensors.MarkupEditor.html#ToolkitEditor_Sensors_MarkupEditor_m_type
+  commentId: F:ToolkitEditor.Sensors.MarkupEditor.m_type
+  fullName: ToolkitEditor.Sensors.MarkupEditor.m_type
+  nameWithType: MarkupEditor.m_type
 - uid: ToolkitEditor.Sensors.MarkupSensorEditor
   name: MarkupSensorEditor
   href: api/ToolkitEditor.Sensors.MarkupSensorEditor.html
@@ -1850,6 +1900,32 @@ references:
   isSpec: "True"
   fullName: ToolkitEngine.Sensors.Markup.occupant
   nameWithType: Markup.occupant
+- uid: ToolkitEngine.Sensors.Markup.onSignalDetected
+  name: onSignalDetected
+  href: api/ToolkitEngine.Sensors.Markup.html#ToolkitEngine_Sensors_Markup_onSignalDetected
+  commentId: P:ToolkitEngine.Sensors.Markup.onSignalDetected
+  fullName: ToolkitEngine.Sensors.Markup.onSignalDetected
+  nameWithType: Markup.onSignalDetected
+- uid: ToolkitEngine.Sensors.Markup.onSignalDetected*
+  name: onSignalDetected
+  href: api/ToolkitEngine.Sensors.Markup.html#ToolkitEngine_Sensors_Markup_onSignalDetected_
+  commentId: Overload:ToolkitEngine.Sensors.Markup.onSignalDetected
+  isSpec: "True"
+  fullName: ToolkitEngine.Sensors.Markup.onSignalDetected
+  nameWithType: Markup.onSignalDetected
+- uid: ToolkitEngine.Sensors.Markup.onSignalUndetected
+  name: onSignalUndetected
+  href: api/ToolkitEngine.Sensors.Markup.html#ToolkitEngine_Sensors_Markup_onSignalUndetected
+  commentId: P:ToolkitEngine.Sensors.Markup.onSignalUndetected
+  fullName: ToolkitEngine.Sensors.Markup.onSignalUndetected
+  nameWithType: Markup.onSignalUndetected
+- uid: ToolkitEngine.Sensors.Markup.onSignalUndetected*
+  name: onSignalUndetected
+  href: api/ToolkitEngine.Sensors.Markup.html#ToolkitEngine_Sensors_Markup_onSignalUndetected_
+  commentId: Overload:ToolkitEngine.Sensors.Markup.onSignalUndetected
+  isSpec: "True"
+  fullName: ToolkitEngine.Sensors.Markup.onSignalUndetected
+  nameWithType: Markup.onSignalUndetected
 - uid: ToolkitEngine.Sensors.Markup.reserved
   name: reserved
   href: api/ToolkitEngine.Sensors.Markup.html#ToolkitEngine_Sensors_Markup_reserved
@@ -1908,6 +1984,19 @@ references:
   commentId: T:ToolkitEngine.Sensors.MarkupSensor
   fullName: ToolkitEngine.Sensors.MarkupSensor
   nameWithType: MarkupSensor
+- uid: ToolkitEngine.Sensors.MarkupSensor.CustomAddSignal(ToolkitEngine.Sensors.SensorEventArgs)
+  name: CustomAddSignal(SensorEventArgs)
+  href: api/ToolkitEngine.Sensors.MarkupSensor.html#ToolkitEngine_Sensors_MarkupSensor_CustomAddSignal_ToolkitEngine_Sensors_SensorEventArgs_
+  commentId: M:ToolkitEngine.Sensors.MarkupSensor.CustomAddSignal(ToolkitEngine.Sensors.SensorEventArgs)
+  fullName: ToolkitEngine.Sensors.MarkupSensor.CustomAddSignal(ToolkitEngine.Sensors.SensorEventArgs)
+  nameWithType: MarkupSensor.CustomAddSignal(SensorEventArgs)
+- uid: ToolkitEngine.Sensors.MarkupSensor.CustomAddSignal*
+  name: CustomAddSignal
+  href: api/ToolkitEngine.Sensors.MarkupSensor.html#ToolkitEngine_Sensors_MarkupSensor_CustomAddSignal_
+  commentId: Overload:ToolkitEngine.Sensors.MarkupSensor.CustomAddSignal
+  isSpec: "True"
+  fullName: ToolkitEngine.Sensors.MarkupSensor.CustomAddSignal
+  nameWithType: MarkupSensor.CustomAddSignal
 - uid: ToolkitEngine.Sensors.MarkupSensor.CustomPulse
   name: CustomPulse()
   href: api/ToolkitEngine.Sensors.MarkupSensor.html#ToolkitEngine_Sensors_MarkupSensor_CustomPulse
@@ -1921,6 +2010,19 @@ references:
   isSpec: "True"
   fullName: ToolkitEngine.Sensors.MarkupSensor.CustomPulse
   nameWithType: MarkupSensor.CustomPulse
+- uid: ToolkitEngine.Sensors.MarkupSensor.CustomRemoveSignal(ToolkitEngine.Sensors.SensorEventArgs)
+  name: CustomRemoveSignal(SensorEventArgs)
+  href: api/ToolkitEngine.Sensors.MarkupSensor.html#ToolkitEngine_Sensors_MarkupSensor_CustomRemoveSignal_ToolkitEngine_Sensors_SensorEventArgs_
+  commentId: M:ToolkitEngine.Sensors.MarkupSensor.CustomRemoveSignal(ToolkitEngine.Sensors.SensorEventArgs)
+  fullName: ToolkitEngine.Sensors.MarkupSensor.CustomRemoveSignal(ToolkitEngine.Sensors.SensorEventArgs)
+  nameWithType: MarkupSensor.CustomRemoveSignal(SensorEventArgs)
+- uid: ToolkitEngine.Sensors.MarkupSensor.CustomRemoveSignal*
+  name: CustomRemoveSignal
+  href: api/ToolkitEngine.Sensors.MarkupSensor.html#ToolkitEngine_Sensors_MarkupSensor_CustomRemoveSignal_
+  commentId: Overload:ToolkitEngine.Sensors.MarkupSensor.CustomRemoveSignal
+  isSpec: "True"
+  fullName: ToolkitEngine.Sensors.MarkupSensor.CustomRemoveSignal
+  nameWithType: MarkupSensor.CustomRemoveSignal
 - uid: ToolkitEngine.Sensors.MarkupSensor.Pulse
   name: Pulse()
   href: api/ToolkitEngine.Sensors.MarkupSensor.html#ToolkitEngine_Sensors_MarkupSensor_Pulse

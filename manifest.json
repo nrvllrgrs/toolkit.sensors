@@ -85,6 +85,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEditor.Sensors.MarkupEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEditor.Sensors.MarkupEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ToolkitEditor.Sensors.MarkupSensorEditor.yml",
       "output": {
         ".html": {
