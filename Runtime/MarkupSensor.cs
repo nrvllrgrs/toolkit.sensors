@@ -70,6 +70,24 @@ namespace ToolkitEngine.Sensors
 			}
 		}
 
+		protected override void CustomAddSignal(SensorEventArgs args)
+		{
+			var markup = args.signal.detected.GetComponent<Markup>();
+			if (markup != null)
+			{
+				markup.onSignalDetected.Invoke(args);
+			}
+		}
+
+		protected override void CustomRemoveSignal(SensorEventArgs args)
+		{
+			var markup = args.signal.detected.GetComponent<Markup>();
+			if (markup != null)
+			{
+				markup.onSignalUndetected.Invoke(args);
+			}
+		}
+
 		#endregion
 
 		#region Editor-Only

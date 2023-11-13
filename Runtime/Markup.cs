@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace ToolkitEngine.Sensors
 {
@@ -14,9 +15,19 @@ namespace ToolkitEngine.Sensors
 
         #endregion
 
-        #region Properties
+        #region Events
 
-        public MarkupType type => m_type;
+        [SerializeField]
+        private UnityEvent<SensorEventArgs> m_onSignalDetected;
+
+		[SerializeField]
+		private UnityEvent<SensorEventArgs> m_onSignalUndetected;
+
+		#endregion
+
+		#region Properties
+
+		public MarkupType type => m_type;
 
         /// <summary>
         /// Indicates whether markup is currently occupied
@@ -31,11 +42,21 @@ namespace ToolkitEngine.Sensors
         public GameObject occupant => m_occupant;
         public GameObject reserver => m_reserver;
 
-        #endregion
+        /// <summary>
+        /// Invoked when this Markup is detected by any MarkupSensor
+        /// </summary>
+        public UnityEvent<SensorEventArgs> onSignalDetected => m_onSignalDetected;
 
-        #region Methods
+        /// <summary>
+        /// Invoked when this Markup is undetected by any MarkupSensor
+        /// </summary>
+        public UnityEvent<SensorEventArgs> onSignalUndetected => m_onSignalUndetected;
 
-        private void OnEnable()
+		#endregion
+
+		#region Methods
+
+		private void OnEnable()
         {
             SensorManager.Instance.Register(this);
         }
