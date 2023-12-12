@@ -14,7 +14,9 @@ namespace ToolkitEngine.Sensors
 
 		#region Properties
 
+#if UNITY_EDITOR
 		public override bool showCurve => false;
+#endif
 
 		#endregion
 
