@@ -81,7 +81,11 @@ namespace ToolkitEngine.Sensors
 
 		protected override void CustomRemoveSignal(SensorEventArgs args)
 		{
-			var markup = args.signal.detected.GetComponent<Markup>();
+			var obj = args.signal.detected;
+			if (GameObjectExt.IsNull(obj))
+				return;
+
+			var markup = obj.GetComponent<Markup>();
 			if (markup != null)
 			{
 				markup.onSignalUndetected.Invoke(args);
