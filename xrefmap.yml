@@ -3540,19 +3540,6 @@ references:
   isSpec: "True"
   fullName: ToolkitEngine.Sensors.StimulusStrengthEvaluator.CalculateNormalizedScore
   nameWithType: StimulusStrengthEvaluator.CalculateNormalizedScore
-- uid: ToolkitEngine.Sensors.StimulusStrengthEvaluator.showCurve
-  name: showCurve
-  href: api/ToolkitEngine.Sensors.StimulusStrengthEvaluator.html#ToolkitEngine_Sensors_StimulusStrengthEvaluator_showCurve
-  commentId: P:ToolkitEngine.Sensors.StimulusStrengthEvaluator.showCurve
-  fullName: ToolkitEngine.Sensors.StimulusStrengthEvaluator.showCurve
-  nameWithType: StimulusStrengthEvaluator.showCurve
-- uid: ToolkitEngine.Sensors.StimulusStrengthEvaluator.showCurve*
-  name: showCurve
-  href: api/ToolkitEngine.Sensors.StimulusStrengthEvaluator.html#ToolkitEngine_Sensors_StimulusStrengthEvaluator_showCurve_
-  commentId: Overload:ToolkitEngine.Sensors.StimulusStrengthEvaluator.showCurve
-  isSpec: "True"
-  fullName: ToolkitEngine.Sensors.StimulusStrengthEvaluator.showCurve
-  nameWithType: StimulusStrengthEvaluator.showCurve
 - uid: ToolkitEngine.Sensors.TriggerSensor
   name: TriggerSensor
   href: api/ToolkitEngine.Sensors.TriggerSensor.html

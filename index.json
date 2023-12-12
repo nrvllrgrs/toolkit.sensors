@@ -262,7 +262,7 @@
   "api/ToolkitEngine.Sensors.StimulusStrengthEvaluator.html": {
     "href": "api/ToolkitEngine.Sensors.StimulusStrengthEvaluator.html",
     "title": "Class StimulusStrengthEvaluator | Sensor Toolkit | 1.0.0",
-    "keywords": "Class StimulusStrengthEvaluator Namespace ToolkitEngine.Sensors public class StimulusStrengthEvaluator : BaseEvaluator Inheritance object StimulusStrengthEvaluator Properties showCurve public override bool showCurve { get; } Property Value bool Methods CalculateNormalizedScore(GameObject, GameObject, Vector3) protected override float CalculateNormalizedScore(GameObject actor, GameObject target, Vector3 position) Parameters actor GameObject target GameObject position Vector3 Returns float"
+    "keywords": "Class StimulusStrengthEvaluator Namespace ToolkitEngine.Sensors public class StimulusStrengthEvaluator : BaseEvaluator Inheritance object StimulusStrengthEvaluator Methods CalculateNormalizedScore(GameObject, GameObject, Vector3) protected override float CalculateNormalizedScore(GameObject actor, GameObject target, Vector3 position) Parameters actor GameObject target GameObject position Vector3 Returns float"
   },
   "api/ToolkitEngine.Sensors.TriggerSensor.html": {
     "href": "api/ToolkitEngine.Sensors.TriggerSensor.html",
