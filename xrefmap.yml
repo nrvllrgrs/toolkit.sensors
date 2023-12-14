@@ -1193,6 +1193,32 @@ references:
   isSpec: "True"
   fullName: ToolkitEngine.Sensors.BaseSensor.ClearSignals
   nameWithType: BaseSensor.ClearSignals
+- uid: ToolkitEngine.Sensors.BaseSensor.CustomAddSignal(ToolkitEngine.Sensors.SensorEventArgs)
+  name: CustomAddSignal(SensorEventArgs)
+  href: api/ToolkitEngine.Sensors.BaseSensor.html#ToolkitEngine_Sensors_BaseSensor_CustomAddSignal_ToolkitEngine_Sensors_SensorEventArgs_
+  commentId: M:ToolkitEngine.Sensors.BaseSensor.CustomAddSignal(ToolkitEngine.Sensors.SensorEventArgs)
+  fullName: ToolkitEngine.Sensors.BaseSensor.CustomAddSignal(ToolkitEngine.Sensors.SensorEventArgs)
+  nameWithType: BaseSensor.CustomAddSignal(SensorEventArgs)
+- uid: ToolkitEngine.Sensors.BaseSensor.CustomAddSignal*
+  name: CustomAddSignal
+  href: api/ToolkitEngine.Sensors.BaseSensor.html#ToolkitEngine_Sensors_BaseSensor_CustomAddSignal_
+  commentId: Overload:ToolkitEngine.Sensors.BaseSensor.CustomAddSignal
+  isSpec: "True"
+  fullName: ToolkitEngine.Sensors.BaseSensor.CustomAddSignal
+  nameWithType: BaseSensor.CustomAddSignal
+- uid: ToolkitEngine.Sensors.BaseSensor.CustomRemoveSignal(ToolkitEngine.Sensors.SensorEventArgs)
+  name: CustomRemoveSignal(SensorEventArgs)
+  href: api/ToolkitEngine.Sensors.BaseSensor.html#ToolkitEngine_Sensors_BaseSensor_CustomRemoveSignal_ToolkitEngine_Sensors_SensorEventArgs_
+  commentId: M:ToolkitEngine.Sensors.BaseSensor.CustomRemoveSignal(ToolkitEngine.Sensors.SensorEventArgs)
+  fullName: ToolkitEngine.Sensors.BaseSensor.CustomRemoveSignal(ToolkitEngine.Sensors.SensorEventArgs)
+  nameWithType: BaseSensor.CustomRemoveSignal(SensorEventArgs)
+- uid: ToolkitEngine.Sensors.BaseSensor.CustomRemoveSignal*
+  name: CustomRemoveSignal
+  href: api/ToolkitEngine.Sensors.BaseSensor.html#ToolkitEngine_Sensors_BaseSensor_CustomRemoveSignal_
+  commentId: Overload:ToolkitEngine.Sensors.BaseSensor.CustomRemoveSignal
+  isSpec: "True"
+  fullName: ToolkitEngine.Sensors.BaseSensor.CustomRemoveSignal
+  nameWithType: BaseSensor.CustomRemoveSignal
 - uid: ToolkitEngine.Sensors.BaseSensor.GetFilteredObject(GameObject)
   name: GetFilteredObject(GameObject)
   href: api/ToolkitEngine.Sensors.BaseSensor.html#ToolkitEngine_Sensors_BaseSensor_GetFilteredObject_GameObject_
