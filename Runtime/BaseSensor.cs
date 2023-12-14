@@ -196,7 +196,12 @@ namespace ToolkitEngine.Sensors
                 onFirstDetection.Invoke(args);
             }
             onSignalDetected.Invoke(args);
-        }
+
+            CustomAddSignal(args);
+		}
+
+        protected virtual void CustomAddSignal(SensorEventArgs args)
+        { }
 
         public bool TryAddSignalToMap(GameObject detected, float strength, SignalType signalType, Dictionary<GameObject, Signal> map, out Signal signal)
         {
@@ -236,7 +241,12 @@ namespace ToolkitEngine.Sensors
             {
                 onLastUndetection.Invoke(args);
             }
-        }
+
+            CustomRemoveSignal(args);
+		}
+
+        protected virtual void CustomRemoveSignal(SensorEventArgs args)
+        { }
 
         public void ClearSignals()
         {
