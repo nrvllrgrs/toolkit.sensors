@@ -149,6 +149,11 @@
     "title": "Class Markup | Sensor Toolkit | 1.0.0",
     "keywords": "Class Markup Namespace ToolkitEngine.Sensors public class Markup : MonoBehaviour Inheritance object Markup Properties occupant public GameObject occupant { get; } Property Value GameObject onSignalDetected Invoked when this Markup is detected by any MarkupSensor public UnityEvent<SensorEventArgs> onSignalDetected { get; } Property Value UnityEvent<SensorEventArgs> onSignalUndetected Invoked when this Markup is undetected by any MarkupSensor public UnityEvent<SensorEventArgs> onSignalUndetected { get; } Property Value UnityEvent<SensorEventArgs> reserved Indicates whether markup is being reserved by actor public bool reserved { get; } Property Value bool reserver public GameObject reserver { get; } Property Value GameObject type public MarkupType type { get; } Property Value MarkupType vacant Indicates whether markup is currently occupied public bool vacant { get; } Property Value bool Methods Arrive(GameObject) public virtual bool Arrive(GameObject obj) Parameters obj GameObject Returns bool CanOccupy(GameObject) public bool CanOccupy(GameObject obj) Parameters obj GameObject Returns bool Cancel(GameObject) public virtual bool Cancel(GameObject obj) Parameters obj GameObject Returns bool Depart(GameObject) public virtual bool Depart(GameObject obj) Parameters obj GameObject Returns bool Evict() public virtual void Evict() ForceCancel() public void ForceCancel() OccupiedBy(GameObject) public bool OccupiedBy(GameObject obj) Parameters obj GameObject Returns bool Reserve(GameObject) public virtual bool Reserve(GameObject obj) Parameters obj GameObject Returns bool ReservedBy(GameObject) public bool ReservedBy(GameObject obj) Parameters obj GameObject Returns bool"
   },
+  "api/ToolkitEngine.Sensors.MarkupFilter.html": {
+    "href": "api/ToolkitEngine.Sensors.MarkupFilter.html",
+    "title": "Class MarkupFilter | Sensor Toolkit | 1.0.0",
+    "keywords": "Class MarkupFilter Namespace ToolkitEngine.Sensors public class MarkupFilter : BaseFilter Inheritance object MarkupFilter Methods IsIncluded(GameObject, GameObject, Vector3) protected override bool IsIncluded(GameObject actor, GameObject target, Vector3 position) Parameters actor GameObject target GameObject position Vector3 Returns bool"
+  },
   "api/ToolkitEngine.Sensors.MarkupSensor.html": {
     "href": "api/ToolkitEngine.Sensors.MarkupSensor.html",
     "title": "Class MarkupSensor | Sensor Toolkit | 1.0.0",
@@ -372,7 +377,7 @@
   "api/ToolkitEngine.Sensors.html": {
     "href": "api/ToolkitEngine.Sensors.html",
     "title": "Namespace ToolkitEngine.Sensors | Sensor Toolkit | 1.0.0",
-    "keywords": "Namespace ToolkitEngine.Sensors Classes BaseColliderSensor BaseDetectionSensor BasePulseableSensor BaseSensor ColliderSensor EventHooks FilterSensor LOSTargets LastKnownLocation Markup MarkupSensor MarkupType OccupantFilter Perception Perception.Sense Perception.Stimulus PerceptionEventArgs RangeSensor RaySensor ReserverFilter SensorEventArgs SensorManager SensorPulse SignaTypeEditor Signal SignalBroadcaster SignalSensor SignalType StimulusAgeEvaluator StimulusStrengthEvaluator TriggerSensor VacancyFilter Structs LOSTargets.Target Interfaces IPulseableSensor Enums DetectionMode Perception.SenseType PulseMode SignalSensor.ForgetMode"
+    "keywords": "Namespace ToolkitEngine.Sensors Classes BaseColliderSensor BaseDetectionSensor BasePulseableSensor BaseSensor ColliderSensor EventHooks FilterSensor LOSTargets LastKnownLocation Markup MarkupFilter MarkupSensor MarkupType OccupantFilter Perception Perception.Sense Perception.Stimulus PerceptionEventArgs RangeSensor RaySensor ReserverFilter SensorEventArgs SensorManager SensorPulse SignaTypeEditor Signal SignalBroadcaster SignalSensor SignalType StimulusAgeEvaluator StimulusStrengthEvaluator TriggerSensor VacancyFilter Structs LOSTargets.Target Interfaces IPulseableSensor Enums DetectionMode Perception.SenseType PulseMode SignalSensor.ForgetMode"
   },
   "api/index.html": {
     "href": "api/index.html",

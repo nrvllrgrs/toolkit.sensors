@@ -2004,6 +2004,25 @@ references:
   isSpec: "True"
   fullName: ToolkitEngine.Sensors.Markup.vacant
   nameWithType: Markup.vacant
+- uid: ToolkitEngine.Sensors.MarkupFilter
+  name: MarkupFilter
+  href: api/ToolkitEngine.Sensors.MarkupFilter.html
+  commentId: T:ToolkitEngine.Sensors.MarkupFilter
+  fullName: ToolkitEngine.Sensors.MarkupFilter
+  nameWithType: MarkupFilter
+- uid: ToolkitEngine.Sensors.MarkupFilter.IsIncluded(GameObject,GameObject,Vector3)
+  name: IsIncluded(GameObject, GameObject, Vector3)
+  href: api/ToolkitEngine.Sensors.MarkupFilter.html#ToolkitEngine_Sensors_MarkupFilter_IsIncluded_GameObject_GameObject_Vector3_
+  commentId: M:ToolkitEngine.Sensors.MarkupFilter.IsIncluded(GameObject,GameObject,Vector3)
+  fullName: ToolkitEngine.Sensors.MarkupFilter.IsIncluded(GameObject, GameObject, Vector3)
+  nameWithType: MarkupFilter.IsIncluded(GameObject, GameObject, Vector3)
+- uid: ToolkitEngine.Sensors.MarkupFilter.IsIncluded*
+  name: IsIncluded
+  href: api/ToolkitEngine.Sensors.MarkupFilter.html#ToolkitEngine_Sensors_MarkupFilter_IsIncluded_
+  commentId: Overload:ToolkitEngine.Sensors.MarkupFilter.IsIncluded
+  isSpec: "True"
+  fullName: ToolkitEngine.Sensors.MarkupFilter.IsIncluded
+  nameWithType: MarkupFilter.IsIncluded
 - uid: ToolkitEngine.Sensors.MarkupSensor
   name: MarkupSensor
   href: api/ToolkitEngine.Sensors.MarkupSensor.html
