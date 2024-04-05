@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.Events;
-using Sirenix.OdinInspector;
+using NaughtyAttributes;
 
 namespace ToolkitEngine.Sensors
 {

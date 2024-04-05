@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using Sirenix.OdinInspector;
+using NaughtyAttributes;
 
 namespace ToolkitEngine.Sensors
 {

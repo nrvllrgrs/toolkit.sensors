@@ -1,5 +1,5 @@
 using UnityEngine;
-using Sirenix.OdinInspector;
+using NaughtyAttributes;
 
 namespace ToolkitEngine.Sensors
 {
@@ -14,7 +14,7 @@ namespace ToolkitEngine.Sensors
         [SerializeField, Tooltip("Strength factor of broadcast signal.")]
         private float m_factor = 1f;
 
-        [SerializeField, LabelText("Frequency")]
+        [SerializeField, Label("Frequency")]
         private PulseMode m_pulseMode;
 
         #endregion
