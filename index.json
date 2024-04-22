@@ -37,7 +37,7 @@
   "api/ToolkitEditor.Sensors.MarkupEditor.html": {
     "href": "api/ToolkitEditor.Sensors.MarkupEditor.html",
     "title": "Class MarkupEditor | Sensor Toolkit | 1.0.0",
-    "keywords": "Class MarkupEditor Namespace ToolkitEditor.Sensors public class MarkupEditor : BaseToolkitEditor Inheritance object MarkupEditor Fields m_onSignalDetected protected SerializedProperty m_onSignalDetected Field Value SerializedProperty m_onSignalUndetected protected SerializedProperty m_onSignalUndetected Field Value SerializedProperty m_type protected SerializedProperty m_type Field Value SerializedProperty Methods DrawEvents() protected override void DrawEvents() DrawProperties() protected override void DrawProperties()"
+    "keywords": "Class MarkupEditor Namespace ToolkitEditor.Sensors public class MarkupEditor : BaseToolkitEditor Inheritance object MarkupEditor Fields m_onArrival protected SerializedProperty m_onArrival Field Value SerializedProperty m_onCanceled protected SerializedProperty m_onCanceled Field Value SerializedProperty m_onDeparture protected SerializedProperty m_onDeparture Field Value SerializedProperty m_onReserved protected SerializedProperty m_onReserved Field Value SerializedProperty m_onSignalDetected protected SerializedProperty m_onSignalDetected Field Value SerializedProperty m_onSignalUndetected protected SerializedProperty m_onSignalUndetected Field Value SerializedProperty m_type protected SerializedProperty m_type Field Value SerializedProperty Methods DrawEvents() protected override void DrawEvents() DrawProperties() protected override void DrawProperties()"
   },
   "api/ToolkitEditor.Sensors.MarkupSensorEditor.html": {
     "href": "api/ToolkitEditor.Sensors.MarkupSensorEditor.html",
@@ -72,7 +72,7 @@
   "api/ToolkitEditor.Sensors.VisualScripting.Setup.html": {
     "href": "api/ToolkitEditor.Sensors.VisualScripting.Setup.html",
     "title": "Class Setup | Sensor Toolkit | 1.0.0",
-    "keywords": "Class Setup Namespace ToolkitEditor.Sensors.VisualScripting public static class Setup Inheritance object Setup Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Do() public static void Do()"
+    "keywords": "Class Setup Namespace ToolkitEditor.Sensors.VisualScripting public static class Setup Inheritance object Setup Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString()"
   },
   "api/ToolkitEditor.Sensors.VisualScripting.html": {
     "href": "api/ToolkitEditor.Sensors.VisualScripting.html",
@@ -147,7 +147,12 @@
   "api/ToolkitEngine.Sensors.Markup.html": {
     "href": "api/ToolkitEngine.Sensors.Markup.html",
     "title": "Class Markup | Sensor Toolkit | 1.0.0",
-    "keywords": "Class Markup Namespace ToolkitEngine.Sensors public class Markup : MonoBehaviour Inheritance object Markup Properties occupant public GameObject occupant { get; } Property Value GameObject onSignalDetected Invoked when this Markup is detected by any MarkupSensor public UnityEvent<SensorEventArgs> onSignalDetected { get; } Property Value UnityEvent<SensorEventArgs> onSignalUndetected Invoked when this Markup is undetected by any MarkupSensor public UnityEvent<SensorEventArgs> onSignalUndetected { get; } Property Value UnityEvent<SensorEventArgs> reserved Indicates whether markup is being reserved by actor public bool reserved { get; } Property Value bool reserver public GameObject reserver { get; } Property Value GameObject type public MarkupType type { get; } Property Value MarkupType vacant Indicates whether markup is currently occupied public bool vacant { get; } Property Value bool Methods Arrive(GameObject) public virtual bool Arrive(GameObject obj) Parameters obj GameObject Returns bool CanOccupy(GameObject) public bool CanOccupy(GameObject obj) Parameters obj GameObject Returns bool Cancel(GameObject) public virtual bool Cancel(GameObject obj) Parameters obj GameObject Returns bool Depart(GameObject) public virtual bool Depart(GameObject obj) Parameters obj GameObject Returns bool Evict() public virtual void Evict() ForceCancel() public void ForceCancel() OccupiedBy(GameObject) public bool OccupiedBy(GameObject obj) Parameters obj GameObject Returns bool Reserve(GameObject) public virtual bool Reserve(GameObject obj) Parameters obj GameObject Returns bool ReservedBy(GameObject) public bool ReservedBy(GameObject obj) Parameters obj GameObject Returns bool"
+    "keywords": "Class Markup Namespace ToolkitEngine.Sensors public class Markup : MonoBehaviour Inheritance object Markup Properties occupant public GameObject occupant { get; } Property Value GameObject onArrival public UnityEvent<MarkupEventArgs> onArrival { get; } Property Value UnityEvent<MarkupEventArgs> onCanceled public UnityEvent<MarkupEventArgs> onCanceled { get; } Property Value UnityEvent<MarkupEventArgs> onDeparture public UnityEvent<MarkupEventArgs> onDeparture { get; } Property Value UnityEvent<MarkupEventArgs> onReserved public UnityEvent<MarkupEventArgs> onReserved { get; } Property Value UnityEvent<MarkupEventArgs> onSignalDetected Invoked when this Markup is detected by any MarkupSensor public UnityEvent<SensorEventArgs> onSignalDetected { get; } Property Value UnityEvent<SensorEventArgs> onSignalUndetected Invoked when this Markup is undetected by any MarkupSensor public UnityEvent<SensorEventArgs> onSignalUndetected { get; } Property Value UnityEvent<SensorEventArgs> reserved Indicates whether markup is being reserved by actor public bool reserved { get; } Property Value bool reserver public GameObject reserver { get; } Property Value GameObject type public MarkupType type { get; } Property Value MarkupType vacant Indicates whether markup is currently occupied public bool vacant { get; } Property Value bool Methods Arrive(GameObject) public virtual bool Arrive(GameObject obj) Parameters obj GameObject Returns bool CanOccupy(GameObject) public bool CanOccupy(GameObject obj) Parameters obj GameObject Returns bool Cancel(GameObject) public virtual bool Cancel(GameObject obj) Parameters obj GameObject Returns bool Depart(GameObject) public virtual bool Depart(GameObject obj) Parameters obj GameObject Returns bool Evict() public virtual void Evict() ForceCancel() public void ForceCancel() OccupiedBy(GameObject) public bool OccupiedBy(GameObject obj) Parameters obj GameObject Returns bool Reserve(GameObject) public virtual bool Reserve(GameObject obj) Parameters obj GameObject Returns bool ReservedBy(GameObject) public bool ReservedBy(GameObject obj) Parameters obj GameObject Returns bool"
+  },
+  "api/ToolkitEngine.Sensors.MarkupEventArgs.html": {
+    "href": "api/ToolkitEngine.Sensors.MarkupEventArgs.html",
+    "title": "Class MarkupEventArgs | Sensor Toolkit | 1.0.0",
+    "keywords": "Class MarkupEventArgs Namespace ToolkitEngine.Sensors public class MarkupEventArgs : EventArgs Inheritance object EventArgs MarkupEventArgs Inherited Members EventArgs.Empty object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors MarkupEventArgs(Markup, GameObject) public MarkupEventArgs(Markup markup, GameObject actor) Parameters markup Markup actor GameObject Properties actor public GameObject actor { get; } Property Value GameObject markup public Markup markup { get; } Property Value Markup"
   },
   "api/ToolkitEngine.Sensors.MarkupFilter.html": {
     "href": "api/ToolkitEngine.Sensors.MarkupFilter.html",
@@ -213,6 +218,11 @@
     "href": "api/ToolkitEngine.Sensors.ReserverFilter.html",
     "title": "Class ReserverFilter | Sensor Toolkit | 1.0.0",
     "keywords": "Class ReserverFilter Namespace ToolkitEngine.Sensors public class ReserverFilter : BaseFilter Inheritance object ReserverFilter Methods IsIncluded(GameObject, GameObject, Vector3) protected override bool IsIncluded(GameObject actor, GameObject target, Vector3 position) Parameters actor GameObject target GameObject position Vector3 Returns bool"
+  },
+  "api/ToolkitEngine.Sensors.SecurityCamera.html": {
+    "href": "api/ToolkitEngine.Sensors.SecurityCamera.html",
+    "title": "Class SecurityCamera | Sensor Toolkit | 1.0.0",
+    "keywords": "Class SecurityCamera Namespace ToolkitEngine.Sensors public class SecurityCamera : MonoBehaviour Inheritance object SecurityCamera Properties isTracking public bool isTracking { get; } Property Value bool"
   },
   "api/ToolkitEngine.Sensors.SensorEventArgs.html": {
     "href": "api/ToolkitEngine.Sensors.SensorEventArgs.html",
@@ -377,7 +387,7 @@
   "api/ToolkitEngine.Sensors.html": {
     "href": "api/ToolkitEngine.Sensors.html",
     "title": "Namespace ToolkitEngine.Sensors | Sensor Toolkit | 1.0.0",
-    "keywords": "Namespace ToolkitEngine.Sensors Classes BaseColliderSensor BaseDetectionSensor BasePulseableSensor BaseSensor ColliderSensor EventHooks FilterSensor LOSTargets LastKnownLocation Markup MarkupFilter MarkupSensor MarkupType OccupantFilter Perception Perception.Sense Perception.Stimulus PerceptionEventArgs RangeSensor RaySensor ReserverFilter SensorEventArgs SensorManager SensorPulse SignaTypeEditor Signal SignalBroadcaster SignalSensor SignalType StimulusAgeEvaluator StimulusStrengthEvaluator TriggerSensor VacancyFilter Structs LOSTargets.Target Interfaces IPulseableSensor Enums DetectionMode Perception.SenseType PulseMode SignalSensor.ForgetMode"
+    "keywords": "Namespace ToolkitEngine.Sensors Classes BaseColliderSensor BaseDetectionSensor BasePulseableSensor BaseSensor ColliderSensor EventHooks FilterSensor LOSTargets LastKnownLocation Markup MarkupEventArgs MarkupFilter MarkupSensor MarkupType OccupantFilter Perception Perception.Sense Perception.Stimulus PerceptionEventArgs RangeSensor RaySensor ReserverFilter SecurityCamera SensorEventArgs SensorManager SensorPulse SignaTypeEditor Signal SignalBroadcaster SignalSensor SignalType StimulusAgeEvaluator StimulusStrengthEvaluator TriggerSensor VacancyFilter Structs LOSTargets.Target Interfaces IPulseableSensor Enums DetectionMode Perception.SenseType PulseMode SignalSensor.ForgetMode"
   },
   "api/index.html": {
     "href": "api/index.html",

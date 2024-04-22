@@ -514,6 +514,30 @@ references:
   isSpec: "True"
   fullName: ToolkitEditor.Sensors.MarkupEditor.DrawProperties
   nameWithType: MarkupEditor.DrawProperties
+- uid: ToolkitEditor.Sensors.MarkupEditor.m_onArrival
+  name: m_onArrival
+  href: api/ToolkitEditor.Sensors.MarkupEditor.html#ToolkitEditor_Sensors_MarkupEditor_m_onArrival
+  commentId: F:ToolkitEditor.Sensors.MarkupEditor.m_onArrival
+  fullName: ToolkitEditor.Sensors.MarkupEditor.m_onArrival
+  nameWithType: MarkupEditor.m_onArrival
+- uid: ToolkitEditor.Sensors.MarkupEditor.m_onCanceled
+  name: m_onCanceled
+  href: api/ToolkitEditor.Sensors.MarkupEditor.html#ToolkitEditor_Sensors_MarkupEditor_m_onCanceled
+  commentId: F:ToolkitEditor.Sensors.MarkupEditor.m_onCanceled
+  fullName: ToolkitEditor.Sensors.MarkupEditor.m_onCanceled
+  nameWithType: MarkupEditor.m_onCanceled
+- uid: ToolkitEditor.Sensors.MarkupEditor.m_onDeparture
+  name: m_onDeparture
+  href: api/ToolkitEditor.Sensors.MarkupEditor.html#ToolkitEditor_Sensors_MarkupEditor_m_onDeparture
+  commentId: F:ToolkitEditor.Sensors.MarkupEditor.m_onDeparture
+  fullName: ToolkitEditor.Sensors.MarkupEditor.m_onDeparture
+  nameWithType: MarkupEditor.m_onDeparture
+- uid: ToolkitEditor.Sensors.MarkupEditor.m_onReserved
+  name: m_onReserved
+  href: api/ToolkitEditor.Sensors.MarkupEditor.html#ToolkitEditor_Sensors_MarkupEditor_m_onReserved
+  commentId: F:ToolkitEditor.Sensors.MarkupEditor.m_onReserved
+  fullName: ToolkitEditor.Sensors.MarkupEditor.m_onReserved
+  nameWithType: MarkupEditor.m_onReserved
 - uid: ToolkitEditor.Sensors.MarkupEditor.m_onSignalDetected
   name: m_onSignalDetected
   href: api/ToolkitEditor.Sensors.MarkupEditor.html#ToolkitEditor_Sensors_MarkupEditor_m_onSignalDetected
@@ -949,19 +973,6 @@ references:
   commentId: T:ToolkitEditor.Sensors.VisualScripting.Setup
   fullName: ToolkitEditor.Sensors.VisualScripting.Setup
   nameWithType: Setup
-- uid: ToolkitEditor.Sensors.VisualScripting.Setup.Do
-  name: Do()
-  href: api/ToolkitEditor.Sensors.VisualScripting.Setup.html#ToolkitEditor_Sensors_VisualScripting_Setup_Do
-  commentId: M:ToolkitEditor.Sensors.VisualScripting.Setup.Do
-  fullName: ToolkitEditor.Sensors.VisualScripting.Setup.Do()
-  nameWithType: Setup.Do()
-- uid: ToolkitEditor.Sensors.VisualScripting.Setup.Do*
-  name: Do
-  href: api/ToolkitEditor.Sensors.VisualScripting.Setup.html#ToolkitEditor_Sensors_VisualScripting_Setup_Do_
-  commentId: Overload:ToolkitEditor.Sensors.VisualScripting.Setup.Do
-  isSpec: "True"
-  fullName: ToolkitEditor.Sensors.VisualScripting.Setup.Do
-  nameWithType: Setup.Do
 - uid: ToolkitEngine.Sensors
   name: ToolkitEngine.Sensors
   href: api/ToolkitEngine.Sensors.html
@@ -1926,6 +1937,58 @@ references:
   isSpec: "True"
   fullName: ToolkitEngine.Sensors.Markup.occupant
   nameWithType: Markup.occupant
+- uid: ToolkitEngine.Sensors.Markup.onArrival
+  name: onArrival
+  href: api/ToolkitEngine.Sensors.Markup.html#ToolkitEngine_Sensors_Markup_onArrival
+  commentId: P:ToolkitEngine.Sensors.Markup.onArrival
+  fullName: ToolkitEngine.Sensors.Markup.onArrival
+  nameWithType: Markup.onArrival
+- uid: ToolkitEngine.Sensors.Markup.onArrival*
+  name: onArrival
+  href: api/ToolkitEngine.Sensors.Markup.html#ToolkitEngine_Sensors_Markup_onArrival_
+  commentId: Overload:ToolkitEngine.Sensors.Markup.onArrival
+  isSpec: "True"
+  fullName: ToolkitEngine.Sensors.Markup.onArrival
+  nameWithType: Markup.onArrival
+- uid: ToolkitEngine.Sensors.Markup.onCanceled
+  name: onCanceled
+  href: api/ToolkitEngine.Sensors.Markup.html#ToolkitEngine_Sensors_Markup_onCanceled
+  commentId: P:ToolkitEngine.Sensors.Markup.onCanceled
+  fullName: ToolkitEngine.Sensors.Markup.onCanceled
+  nameWithType: Markup.onCanceled
+- uid: ToolkitEngine.Sensors.Markup.onCanceled*
+  name: onCanceled
+  href: api/ToolkitEngine.Sensors.Markup.html#ToolkitEngine_Sensors_Markup_onCanceled_
+  commentId: Overload:ToolkitEngine.Sensors.Markup.onCanceled
+  isSpec: "True"
+  fullName: ToolkitEngine.Sensors.Markup.onCanceled
+  nameWithType: Markup.onCanceled
+- uid: ToolkitEngine.Sensors.Markup.onDeparture
+  name: onDeparture
+  href: api/ToolkitEngine.Sensors.Markup.html#ToolkitEngine_Sensors_Markup_onDeparture
+  commentId: P:ToolkitEngine.Sensors.Markup.onDeparture
+  fullName: ToolkitEngine.Sensors.Markup.onDeparture
+  nameWithType: Markup.onDeparture
+- uid: ToolkitEngine.Sensors.Markup.onDeparture*
+  name: onDeparture
+  href: api/ToolkitEngine.Sensors.Markup.html#ToolkitEngine_Sensors_Markup_onDeparture_
+  commentId: Overload:ToolkitEngine.Sensors.Markup.onDeparture
+  isSpec: "True"
+  fullName: ToolkitEngine.Sensors.Markup.onDeparture
+  nameWithType: Markup.onDeparture
+- uid: ToolkitEngine.Sensors.Markup.onReserved
+  name: onReserved
+  href: api/ToolkitEngine.Sensors.Markup.html#ToolkitEngine_Sensors_Markup_onReserved
+  commentId: P:ToolkitEngine.Sensors.Markup.onReserved
+  fullName: ToolkitEngine.Sensors.Markup.onReserved
+  nameWithType: Markup.onReserved
+- uid: ToolkitEngine.Sensors.Markup.onReserved*
+  name: onReserved
+  href: api/ToolkitEngine.Sensors.Markup.html#ToolkitEngine_Sensors_Markup_onReserved_
+  commentId: Overload:ToolkitEngine.Sensors.Markup.onReserved
+  isSpec: "True"
+  fullName: ToolkitEngine.Sensors.Markup.onReserved
+  nameWithType: Markup.onReserved
 - uid: ToolkitEngine.Sensors.Markup.onSignalDetected
   name: onSignalDetected
   href: api/ToolkitEngine.Sensors.Markup.html#ToolkitEngine_Sensors_Markup_onSignalDetected
@@ -2004,6 +2067,57 @@ references:
   isSpec: "True"
   fullName: ToolkitEngine.Sensors.Markup.vacant
   nameWithType: Markup.vacant
+- uid: ToolkitEngine.Sensors.MarkupEventArgs
+  name: MarkupEventArgs
+  href: api/ToolkitEngine.Sensors.MarkupEventArgs.html
+  commentId: T:ToolkitEngine.Sensors.MarkupEventArgs
+  fullName: ToolkitEngine.Sensors.MarkupEventArgs
+  nameWithType: MarkupEventArgs
+- uid: ToolkitEngine.Sensors.MarkupEventArgs.#ctor(ToolkitEngine.Sensors.Markup,GameObject)
+  name: MarkupEventArgs(Markup, GameObject)
+  href: api/ToolkitEngine.Sensors.MarkupEventArgs.html#ToolkitEngine_Sensors_MarkupEventArgs__ctor_ToolkitEngine_Sensors_Markup_GameObject_
+  commentId: M:ToolkitEngine.Sensors.MarkupEventArgs.#ctor(ToolkitEngine.Sensors.Markup,GameObject)
+  name.vb: New(Markup, GameObject)
+  fullName: ToolkitEngine.Sensors.MarkupEventArgs.MarkupEventArgs(ToolkitEngine.Sensors.Markup, GameObject)
+  fullName.vb: ToolkitEngine.Sensors.MarkupEventArgs.New(ToolkitEngine.Sensors.Markup, GameObject)
+  nameWithType: MarkupEventArgs.MarkupEventArgs(Markup, GameObject)
+  nameWithType.vb: MarkupEventArgs.New(Markup, GameObject)
+- uid: ToolkitEngine.Sensors.MarkupEventArgs.#ctor*
+  name: MarkupEventArgs
+  href: api/ToolkitEngine.Sensors.MarkupEventArgs.html#ToolkitEngine_Sensors_MarkupEventArgs__ctor_
+  commentId: Overload:ToolkitEngine.Sensors.MarkupEventArgs.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ToolkitEngine.Sensors.MarkupEventArgs.MarkupEventArgs
+  fullName.vb: ToolkitEngine.Sensors.MarkupEventArgs.New
+  nameWithType: MarkupEventArgs.MarkupEventArgs
+  nameWithType.vb: MarkupEventArgs.New
+- uid: ToolkitEngine.Sensors.MarkupEventArgs.actor
+  name: actor
+  href: api/ToolkitEngine.Sensors.MarkupEventArgs.html#ToolkitEngine_Sensors_MarkupEventArgs_actor
+  commentId: P:ToolkitEngine.Sensors.MarkupEventArgs.actor
+  fullName: ToolkitEngine.Sensors.MarkupEventArgs.actor
+  nameWithType: MarkupEventArgs.actor
+- uid: ToolkitEngine.Sensors.MarkupEventArgs.actor*
+  name: actor
+  href: api/ToolkitEngine.Sensors.MarkupEventArgs.html#ToolkitEngine_Sensors_MarkupEventArgs_actor_
+  commentId: Overload:ToolkitEngine.Sensors.MarkupEventArgs.actor
+  isSpec: "True"
+  fullName: ToolkitEngine.Sensors.MarkupEventArgs.actor
+  nameWithType: MarkupEventArgs.actor
+- uid: ToolkitEngine.Sensors.MarkupEventArgs.markup
+  name: markup
+  href: api/ToolkitEngine.Sensors.MarkupEventArgs.html#ToolkitEngine_Sensors_MarkupEventArgs_markup
+  commentId: P:ToolkitEngine.Sensors.MarkupEventArgs.markup
+  fullName: ToolkitEngine.Sensors.MarkupEventArgs.markup
+  nameWithType: MarkupEventArgs.markup
+- uid: ToolkitEngine.Sensors.MarkupEventArgs.markup*
+  name: markup
+  href: api/ToolkitEngine.Sensors.MarkupEventArgs.html#ToolkitEngine_Sensors_MarkupEventArgs_markup_
+  commentId: Overload:ToolkitEngine.Sensors.MarkupEventArgs.markup
+  isSpec: "True"
+  fullName: ToolkitEngine.Sensors.MarkupEventArgs.markup
+  nameWithType: MarkupEventArgs.markup
 - uid: ToolkitEngine.Sensors.MarkupFilter
   name: MarkupFilter
   href: api/ToolkitEngine.Sensors.MarkupFilter.html
@@ -2893,6 +3007,25 @@ references:
   isSpec: "True"
   fullName: ToolkitEngine.Sensors.ReserverFilter.IsIncluded
   nameWithType: ReserverFilter.IsIncluded
+- uid: ToolkitEngine.Sensors.SecurityCamera
+  name: SecurityCamera
+  href: api/ToolkitEngine.Sensors.SecurityCamera.html
+  commentId: T:ToolkitEngine.Sensors.SecurityCamera
+  fullName: ToolkitEngine.Sensors.SecurityCamera
+  nameWithType: SecurityCamera
+- uid: ToolkitEngine.Sensors.SecurityCamera.isTracking
+  name: isTracking
+  href: api/ToolkitEngine.Sensors.SecurityCamera.html#ToolkitEngine_Sensors_SecurityCamera_isTracking
+  commentId: P:ToolkitEngine.Sensors.SecurityCamera.isTracking
+  fullName: ToolkitEngine.Sensors.SecurityCamera.isTracking
+  nameWithType: SecurityCamera.isTracking
+- uid: ToolkitEngine.Sensors.SecurityCamera.isTracking*
+  name: isTracking
+  href: api/ToolkitEngine.Sensors.SecurityCamera.html#ToolkitEngine_Sensors_SecurityCamera_isTracking_
+  commentId: Overload:ToolkitEngine.Sensors.SecurityCamera.isTracking
+  isSpec: "True"
+  fullName: ToolkitEngine.Sensors.SecurityCamera.isTracking
+  nameWithType: SecurityCamera.isTracking
 - uid: ToolkitEngine.Sensors.SensorEventArgs
   name: SensorEventArgs
   href: api/ToolkitEngine.Sensors.SensorEventArgs.html

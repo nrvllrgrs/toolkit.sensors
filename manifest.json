@@ -315,6 +315,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.MarkupEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.MarkupEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ToolkitEngine.Sensors.MarkupFilter.yml",
       "output": {
         ".html": {
@@ -439,6 +449,16 @@
       "output": {
         ".html": {
           "relative_path": "api/ToolkitEngine.Sensors.ReserverFilter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ToolkitEngine.Sensors.SecurityCamera.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToolkitEngine.Sensors.SecurityCamera.html"
         }
       },
       "version": ""
