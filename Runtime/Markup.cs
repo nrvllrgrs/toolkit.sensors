@@ -3,7 +3,27 @@ using UnityEngine.Events;
 
 namespace ToolkitEngine.Sensors
 {
-    public class Markup : MonoBehaviour
+    public class MarkupEventArgs : System.EventArgs
+    {
+		#region Properties
+
+        public Markup markup { get; private set; }
+        public GameObject actor { get; private set; }
+
+		#endregion
+
+		#region Constructors
+
+        public MarkupEventArgs(Markup markup, GameObject actor)
+        {
+            this.markup = markup;
+            this.actor = actor;
+        }
+
+		#endregion
+	}
+
+	public class Markup : MonoBehaviour
     {
         #region Fields
 
@@ -22,6 +42,18 @@ namespace ToolkitEngine.Sensors
 
 		[SerializeField]
 		private UnityEvent<SensorEventArgs> m_onSignalUndetected;
+
+        [SerializeField]
+        private UnityEvent<MarkupEventArgs> m_onArrival;
+
+        [SerializeField]
+        private UnityEvent<MarkupEventArgs> m_onDeparture;
+
+		[SerializeField]
+		private UnityEvent<MarkupEventArgs> m_onReserved;
+
+		[SerializeField]
+		private UnityEvent<MarkupEventArgs> m_onCanceled;
 
 		#endregion
 
@@ -52,6 +84,11 @@ namespace ToolkitEngine.Sensors
         /// </summary>
         public UnityEvent<SensorEventArgs> onSignalUndetected => m_onSignalUndetected;
 
+        public UnityEvent<MarkupEventArgs> onArrival => m_onArrival;
+        public UnityEvent<MarkupEventArgs> onDeparture => m_onDeparture;
+        public UnityEvent<MarkupEventArgs> onReserved => m_onReserved;
+        public UnityEvent<MarkupEventArgs> onCanceled => m_onCanceled;
+
 		#endregion
 
 		#region Methods
@@ -76,6 +113,7 @@ namespace ToolkitEngine.Sensors
                 return false;
 
             m_reserver = obj;
+            m_onReserved?.Invoke(new MarkupEventArgs(this, obj));
             return true;
 		}
 
@@ -84,14 +122,17 @@ namespace ToolkitEngine.Sensors
             if (!ReservedBy(obj))
                 return false;
 
-            m_reserver = null;
-            return true;
+            ForceCancel();
+			return true;
         }
 
         public void ForceCancel()
         {
+            var t = m_reserver;
             m_reserver = null;
-        }
+
+			m_onReserved?.Invoke(new MarkupEventArgs(this, t));
+		}
 
         public virtual bool Arrive(GameObject obj)
         {
@@ -100,7 +141,8 @@ namespace ToolkitEngine.Sensors
 
             m_reserver = null;
             m_occupant = obj;
-            return true;
+			m_onArrival?.Invoke(new MarkupEventArgs(this, obj));
+			return true;
         }
 
         public virtual bool Depart(GameObject obj)
@@ -109,7 +151,8 @@ namespace ToolkitEngine.Sensors
                 return false;
 
             m_occupant = null;
-            return true;
+			m_onDeparture?.Invoke(new MarkupEventArgs(this, obj));
+			return true;
         }
 
         public virtual void Evict()
