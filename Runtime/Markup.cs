@@ -23,7 +23,7 @@ namespace ToolkitEngine.Sensors
 		#endregion
 	}
 
-	public class Markup : MonoBehaviour
+	public class Markup : MonoBehaviour, ISignalDetectable
     {
         #region Fields
 

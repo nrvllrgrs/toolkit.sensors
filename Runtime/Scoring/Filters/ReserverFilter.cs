@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace ToolkitEngine.Sensors
 {
+	[EvaluableCategory("Sensors")]
 	public class ReserverFilter : BaseFilter
 	{
 		#region Fields

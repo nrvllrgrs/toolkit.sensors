@@ -1,40 +1,36 @@
-using System;
-using System.Collections.Generic;
+using UnityEngine;
 using UnityEditor;
+using Unity.VisualScripting;
 using ToolkitEngine.Sensors;
 
 namespace ToolkitEditor.Sensors.VisualScripting
 {
-	[InitializeOnLoad]
-	public static class Setup
+    public static class Setup
     {
-		static Setup()
-		{
-			var types = new List<Type>()
-			{
-				typeof(BaseSensor),
-				typeof(FilterSensor),
-				typeof(BaseDetectionSensor),
-				typeof(BasePulseableSensor),
-				typeof(RangeSensor),
-				typeof(RaySensor),
-				typeof(BaseColliderSensor),
-				typeof(ColliderSensor),
-				typeof(TriggerSensor),
-				typeof(SignalSensor),
-				typeof(SignalType),
-				typeof(SignalBroadcaster),
-				typeof(Signal),
-				typeof(MarkupSensor),
-				typeof(MarkupType),
-				typeof(Markup),
-				typeof(Perception),
-				typeof(SensorEventArgs),
-				typeof(MarkupEventArgs),
-				typeof(PerceptionEventArgs),
-			};
+        [MenuItem("Window/Toolkit/Visual Scripting/Setup Sensors")]
+        public static void Do()
+        {
+            bool dirty = false;
+            var config = BoltCore.Configuration;
 
-			ToolkitEditor.VisualScripting.Setup.Initialize("ToolkitEngine.Sensors", types);
+			foreach (var type in typeof(BaseSensor).Assembly.GetTypes())
+            {
+                if (!config.typeOptions.Contains(type))
+                {
+                    config.typeOptions.Add(type);
+                    dirty = true;
+
+                    Debug.LogFormat("Adding {0} to Visual Scripting type options.", type.FullName);
+                }
+            }
+
+            if (dirty)
+            {
+                var metadata = config.GetMetadata(nameof(config.typeOptions));
+                metadata.Save();
+                Codebase.UpdateSettings();
+                UnitBase.Rebuild();
+            }
 		}
 	}
 }

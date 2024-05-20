@@ -3,6 +3,7 @@ using static ToolkitEngine.Sensors.Perception;
 
 namespace ToolkitEngine.Sensors
 {
+	[EvaluableCategory("Sensors")]
 	public class StimulusStrengthEvaluator : BaseEvaluator
     {
 		#region Fields

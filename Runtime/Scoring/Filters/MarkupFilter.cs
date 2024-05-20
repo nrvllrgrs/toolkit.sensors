@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace ToolkitEngine.Sensors
 {
+	[EvaluableCategory("Sensors")]
 	public class MarkupFilter : BaseFilter
 	{
 		#region Fields

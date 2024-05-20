@@ -47,7 +47,7 @@ namespace ToolkitEngine.Sensors
         #endregion
     }
 
-	public abstract class BaseSensor : MonoBehaviour
+	public abstract class BaseSensor : MonoBehaviour, ISignalDetectable
     {
         #region Fields
 

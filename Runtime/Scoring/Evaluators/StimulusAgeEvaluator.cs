@@ -3,7 +3,8 @@ using static ToolkitEngine.Sensors.Perception;
 
 namespace ToolkitEngine.Sensors
 {
-    public class StimulusAgeEvaluator : BaseEvaluator
+	[EvaluableCategory("Sensors")]
+	public class StimulusAgeEvaluator : BaseEvaluator
     {
 		#region Fields
 

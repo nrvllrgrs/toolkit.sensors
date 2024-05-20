@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace ToolkitEngine.Sensors
 {
+	[EvaluableCategory("Sensors")]
 	public class VacancyFilter : BaseFilter
 	{
 		#region Methods
