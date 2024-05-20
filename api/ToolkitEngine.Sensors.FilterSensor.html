@@ -101,7 +101,7 @@ Class FilterSensor  <a class="header-action link-secondary" title="View source" 
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FilterSensor : BaseSensor, IPulseableSensor</code></pre>
+    <pre><code class="lang-csharp hljs">public class FilterSensor : BaseSensor, ISignalDetectable, IPulseableSensor</code></pre>
   </div>
 
 
@@ -119,6 +119,7 @@ Class FilterSensor  <a class="header-action link-secondary" title="View source" 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
+      <div><a class="xref" href="ToolkitEngine.Sensors.ISignalDetectable.html">ISignalDetectable</a></div>
       <div><a class="xref" href="ToolkitEngine.Sensors.IPulseableSensor.html">IPulseableSensor</a></div>
     </dd>
   </dl>

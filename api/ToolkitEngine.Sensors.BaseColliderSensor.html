@@ -101,7 +101,7 @@ Class BaseColliderSensor  <a class="header-action link-secondary" title="View so
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class BaseColliderSensor : BaseDetectionSensor</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class BaseColliderSensor : BaseDetectionSensor, ISignalDetectable</code></pre>
   </div>
 
 
@@ -117,6 +117,12 @@ Class BaseColliderSensor  <a class="header-action link-secondary" title="View so
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="ToolkitEngine.Sensors.ISignalDetectable.html">ISignalDetectable</a></div>
+    </dd>
+  </dl>
 
   <dl class="typelist derived">
     <dt>Derived</dt>

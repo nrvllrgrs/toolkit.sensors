@@ -101,7 +101,7 @@ Class SignalSensor  <a class="header-action link-secondary" title="View source" 
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SignalSensor : BaseSensor</code></pre>
+    <pre><code class="lang-csharp hljs">public class SignalSensor : BaseSensor, ISignalDetectable</code></pre>
   </div>
 
 
@@ -116,6 +116,12 @@ Class SignalSensor  <a class="header-action link-secondary" title="View source" 
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="ToolkitEngine.Sensors.ISignalDetectable.html">ISignalDetectable</a></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">

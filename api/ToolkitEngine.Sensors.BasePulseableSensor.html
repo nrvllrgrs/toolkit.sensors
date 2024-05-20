@@ -101,7 +101,7 @@ Class BasePulseableSensor  <a class="header-action link-secondary" title="View s
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class BasePulseableSensor : BaseDetectionSensor, IPulseableSensor</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class BasePulseableSensor : BaseDetectionSensor, ISignalDetectable, IPulseableSensor</code></pre>
   </div>
 
 
@@ -120,6 +120,7 @@ Class BasePulseableSensor  <a class="header-action link-secondary" title="View s
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
+      <div><a class="xref" href="ToolkitEngine.Sensors.ISignalDetectable.html">ISignalDetectable</a></div>
       <div><a class="xref" href="ToolkitEngine.Sensors.IPulseableSensor.html">IPulseableSensor</a></div>
     </dd>
   </dl>

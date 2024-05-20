@@ -973,6 +973,19 @@ references:
   commentId: T:ToolkitEditor.Sensors.VisualScripting.Setup
   fullName: ToolkitEditor.Sensors.VisualScripting.Setup
   nameWithType: Setup
+- uid: ToolkitEditor.Sensors.VisualScripting.Setup.Do
+  name: Do()
+  href: api/ToolkitEditor.Sensors.VisualScripting.Setup.html#ToolkitEditor_Sensors_VisualScripting_Setup_Do
+  commentId: M:ToolkitEditor.Sensors.VisualScripting.Setup.Do
+  fullName: ToolkitEditor.Sensors.VisualScripting.Setup.Do()
+  nameWithType: Setup.Do()
+- uid: ToolkitEditor.Sensors.VisualScripting.Setup.Do*
+  name: Do
+  href: api/ToolkitEditor.Sensors.VisualScripting.Setup.html#ToolkitEditor_Sensors_VisualScripting_Setup_Do_
+  commentId: Overload:ToolkitEditor.Sensors.VisualScripting.Setup.Do
+  isSpec: "True"
+  fullName: ToolkitEditor.Sensors.VisualScripting.Setup.Do
+  nameWithType: Setup.Do
 - uid: ToolkitEngine.Sensors
   name: ToolkitEngine.Sensors
   href: api/ToolkitEngine.Sensors.html
@@ -1729,6 +1742,38 @@ references:
   isSpec: "True"
   fullName: ToolkitEngine.Sensors.IPulseableSensor.pulseMode
   nameWithType: IPulseableSensor.pulseMode
+- uid: ToolkitEngine.Sensors.ISignalDetectable
+  name: ISignalDetectable
+  href: api/ToolkitEngine.Sensors.ISignalDetectable.html
+  commentId: T:ToolkitEngine.Sensors.ISignalDetectable
+  fullName: ToolkitEngine.Sensors.ISignalDetectable
+  nameWithType: ISignalDetectable
+- uid: ToolkitEngine.Sensors.ISignalDetectable.onSignalDetected
+  name: onSignalDetected
+  href: api/ToolkitEngine.Sensors.ISignalDetectable.html#ToolkitEngine_Sensors_ISignalDetectable_onSignalDetected
+  commentId: P:ToolkitEngine.Sensors.ISignalDetectable.onSignalDetected
+  fullName: ToolkitEngine.Sensors.ISignalDetectable.onSignalDetected
+  nameWithType: ISignalDetectable.onSignalDetected
+- uid: ToolkitEngine.Sensors.ISignalDetectable.onSignalDetected*
+  name: onSignalDetected
+  href: api/ToolkitEngine.Sensors.ISignalDetectable.html#ToolkitEngine_Sensors_ISignalDetectable_onSignalDetected_
+  commentId: Overload:ToolkitEngine.Sensors.ISignalDetectable.onSignalDetected
+  isSpec: "True"
+  fullName: ToolkitEngine.Sensors.ISignalDetectable.onSignalDetected
+  nameWithType: ISignalDetectable.onSignalDetected
+- uid: ToolkitEngine.Sensors.ISignalDetectable.onSignalUndetected
+  name: onSignalUndetected
+  href: api/ToolkitEngine.Sensors.ISignalDetectable.html#ToolkitEngine_Sensors_ISignalDetectable_onSignalUndetected
+  commentId: P:ToolkitEngine.Sensors.ISignalDetectable.onSignalUndetected
+  fullName: ToolkitEngine.Sensors.ISignalDetectable.onSignalUndetected
+  nameWithType: ISignalDetectable.onSignalUndetected
+- uid: ToolkitEngine.Sensors.ISignalDetectable.onSignalUndetected*
+  name: onSignalUndetected
+  href: api/ToolkitEngine.Sensors.ISignalDetectable.html#ToolkitEngine_Sensors_ISignalDetectable_onSignalUndetected_
+  commentId: Overload:ToolkitEngine.Sensors.ISignalDetectable.onSignalUndetected
+  isSpec: "True"
+  fullName: ToolkitEngine.Sensors.ISignalDetectable.onSignalUndetected
+  nameWithType: ISignalDetectable.onSignalUndetected
 - uid: ToolkitEngine.Sensors.LOSTargets
   name: LOSTargets
   href: api/ToolkitEngine.Sensors.LOSTargets.html

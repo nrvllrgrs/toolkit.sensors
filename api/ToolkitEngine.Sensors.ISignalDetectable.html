@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class MarkupFilter | Sensor Toolkit | 1.0.0 </title>
+      <title>Interface ISignalDetectable | Sensor Toolkit | 1.0.0 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class MarkupFilter | Sensor Toolkit | 1.0.0 ">
+      <meta name="title" content="Interface ISignalDetectable | Sensor Toolkit | 1.0.0 ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/nrvllrgrs/toolkit.sensors/new/master/apiSpec/new?filename=ToolkitEngine_Sensors_MarkupFilter.md&amp;value=---%0Auid%3A%20ToolkitEngine.Sensors.MarkupFilter%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/nrvllrgrs/toolkit.sensors/new/master/apiSpec/new?filename=ToolkitEngine_Sensors_ISignalDetectable.md&amp;value=---%0Auid%3A%20ToolkitEngine.Sensors.ISignalDetectable%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="ToolkitEngine.Sensors.MarkupFilter">
+        <article data-uid="ToolkitEngine.Sensors.ISignalDetectable">
 
 
 
-  <h1 id="ToolkitEngine_Sensors_MarkupFilter" data-uid="ToolkitEngine.Sensors.MarkupFilter" class="text-break">
-Class MarkupFilter  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/Scoring/Filters/MarkupFilter.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  <h1 id="ToolkitEngine_Sensors_ISignalDetectable" data-uid="ToolkitEngine.Sensors.ISignalDetectable" class="text-break">
+Interface ISignalDetectable  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/ISignalDetectable.cs/#L5"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -101,19 +101,12 @@ Class MarkupFilter  <a class="header-action link-secondary" title="View source" 
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MarkupFilter : BaseFilter</code></pre>
+    <pre><code class="lang-csharp hljs">public interface ISignalDetectable</code></pre>
   </div>
 
 
 
 
-  <dl class="typelist inheritance">
-    <dt>Inheritance</dt>
-    <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">MarkupFilter</span></div>
-    </dd>
-  </dl>
 
 
 
@@ -123,42 +116,64 @@ Class MarkupFilter  <a class="header-action link-secondary" title="View source" 
 
 
 
-  <h2 class="section" id="methods">Methods
+  <h2 class="section" id="properties">Properties
 </h2>
 
 
-  <a id="ToolkitEngine_Sensors_MarkupFilter_IsIncluded_" data-uid="ToolkitEngine.Sensors.MarkupFilter.IsIncluded*"></a>
+  <a id="ToolkitEngine_Sensors_ISignalDetectable_onSignalDetected_" data-uid="ToolkitEngine.Sensors.ISignalDetectable.onSignalDetected*"></a>
 
-  <h3 id="ToolkitEngine_Sensors_MarkupFilter_IsIncluded_GameObject_GameObject_Vector3_" data-uid="ToolkitEngine.Sensors.MarkupFilter.IsIncluded(GameObject,GameObject,Vector3)">
-  IsIncluded(GameObject, GameObject, Vector3)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/Scoring/Filters/MarkupFilter.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <h3 id="ToolkitEngine_Sensors_ISignalDetectable_onSignalDetected" data-uid="ToolkitEngine.Sensors.ISignalDetectable.onSignalDetected">
+  onSignalDetected
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/ISignalDetectable.cs/#L7"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override bool IsIncluded(GameObject actor, GameObject target, Vector3 position)</code></pre>
+    <pre><code class="lang-csharp hljs">UnityEvent&lt;SensorEventArgs&gt; onSignalDetected { get; }</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>actor</code> <span class="xref">GameObject</span></dt>
-    <dd></dd>
-    <dt><code>target</code> <span class="xref">GameObject</span></dt>
-    <dd></dd>
-    <dt><code>position</code> <span class="xref">Vector3</span></dt>
-    <dd></dd>
-  </dl>
 
-  <h4 class="section">Returns</h4>
+
+
+
+  <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dt><span class="xref">UnityEvent</span>&lt;<a class="xref" href="ToolkitEngine.Sensors.SensorEventArgs.html">SensorEventArgs</a>&gt;</dt>
     <dd></dd>
   </dl>
 
 
 
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_ISignalDetectable_onSignalUndetected_" data-uid="ToolkitEngine.Sensors.ISignalDetectable.onSignalUndetected*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_ISignalDetectable_onSignalUndetected" data-uid="ToolkitEngine.Sensors.ISignalDetectable.onSignalUndetected">
+  onSignalUndetected
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/ISignalDetectable.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">UnityEvent&lt;SensorEventArgs&gt; onSignalUndetected { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span>&lt;<a class="xref" href="ToolkitEngine.Sensors.SensorEventArgs.html">SensorEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
 
 
 
