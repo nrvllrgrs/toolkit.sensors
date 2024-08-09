@@ -77,7 +77,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -89,7 +89,7 @@
 
 
   <h1 id="ToolkitEngine_Sensors_TriggerSensor" data-uid="ToolkitEngine.Sensors.TriggerSensor" class="text-break">
-Class TriggerSensor  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/TriggerSensor.cs/#L5"><i class="bi bi-code-slash"></i></a>
+Class TriggerSensor  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/TriggerSensor.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -211,16 +211,10 @@ Class TriggerSensor  <a class="header-action link-secondary" title="View source"
       <a class="xref" href="ToolkitEngine.Sensors.BaseSensor.html#ToolkitEngine_Sensors_BaseSensor_AddSignal_ToolkitEngine_Sensors_Signal_">BaseSensor.AddSignal(Signal)</a>
     </div>
     <div>
-      <a class="xref" href="ToolkitEngine.Sensors.BaseSensor.html#ToolkitEngine_Sensors_BaseSensor_CustomAddSignal_ToolkitEngine_Sensors_SensorEventArgs_">BaseSensor.CustomAddSignal(SensorEventArgs)</a>
-    </div>
-    <div>
       <a class="xref" href="ToolkitEngine.Sensors.BaseSensor.html#ToolkitEngine_Sensors_BaseSensor_TryAddSignalToMap_GameObject_System_Single_ToolkitEngine_Sensors_SignalType_System_Collections_Generic_Dictionary_GameObject_ToolkitEngine_Sensors_Signal__ToolkitEngine_Sensors_Signal__">BaseSensor.TryAddSignalToMap(GameObject, float, SignalType, Dictionary&lt;GameObject, Signal&gt;, out Signal)</a>
     </div>
     <div>
       <a class="xref" href="ToolkitEngine.Sensors.BaseSensor.html#ToolkitEngine_Sensors_BaseSensor_RemoveSignal_GameObject_">BaseSensor.RemoveSignal(GameObject)</a>
-    </div>
-    <div>
-      <a class="xref" href="ToolkitEngine.Sensors.BaseSensor.html#ToolkitEngine_Sensors_BaseSensor_CustomRemoveSignal_ToolkitEngine_Sensors_SensorEventArgs_">BaseSensor.CustomRemoveSignal(SensorEventArgs)</a>
     </div>
     <div>
       <a class="xref" href="ToolkitEngine.Sensors.BaseSensor.html#ToolkitEngine_Sensors_BaseSensor_ClearSignals">BaseSensor.ClearSignals()</a>
@@ -247,6 +241,262 @@ Class TriggerSensor  <a class="header-action link-secondary" title="View source"
       <a class="xref" href="ToolkitEngine.Sensors.BaseSensor.html#ToolkitEngine_Sensors_BaseSensor_GetFilteredObject_GameObject_">BaseSensor.GetFilteredObject(GameObject)</a>
     </div>
   </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="ToolkitEngine_Sensors_TriggerSensor_onDetectedTail_" data-uid="ToolkitEngine.Sensors.TriggerSensor.onDetectedTail*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_TriggerSensor_onDetectedTail" data-uid="ToolkitEngine.Sensors.TriggerSensor.onDetectedTail">
+  onDetectedTail
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/TriggerSensor.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent&lt;SensorEventArgs&gt; onDetectedTail { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span>&lt;<a class="xref" href="ToolkitEngine.Sensors.SensorEventArgs.html">SensorEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_TriggerSensor_onDetectedTip_" data-uid="ToolkitEngine.Sensors.TriggerSensor.onDetectedTip*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_TriggerSensor_onDetectedTip" data-uid="ToolkitEngine.Sensors.TriggerSensor.onDetectedTip">
+  onDetectedTip
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/TriggerSensor.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent&lt;SensorEventArgs&gt; onDetectedTip { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span>&lt;<a class="xref" href="ToolkitEngine.Sensors.SensorEventArgs.html">SensorEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_TriggerSensor_onUndetectedTail_" data-uid="ToolkitEngine.Sensors.TriggerSensor.onUndetectedTail*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_TriggerSensor_onUndetectedTail" data-uid="ToolkitEngine.Sensors.TriggerSensor.onUndetectedTail">
+  onUndetectedTail
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/TriggerSensor.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent&lt;SensorEventArgs&gt; onUndetectedTail { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span>&lt;<a class="xref" href="ToolkitEngine.Sensors.SensorEventArgs.html">SensorEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_TriggerSensor_onUndetectedTailToTip_" data-uid="ToolkitEngine.Sensors.TriggerSensor.onUndetectedTailToTip*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_TriggerSensor_onUndetectedTailToTip" data-uid="ToolkitEngine.Sensors.TriggerSensor.onUndetectedTailToTip">
+  onUndetectedTailToTip
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/TriggerSensor.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent&lt;SensorEventArgs&gt; onUndetectedTailToTip { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span>&lt;<a class="xref" href="ToolkitEngine.Sensors.SensorEventArgs.html">SensorEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_TriggerSensor_onUndetectedTip_" data-uid="ToolkitEngine.Sensors.TriggerSensor.onUndetectedTip*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_TriggerSensor_onUndetectedTip" data-uid="ToolkitEngine.Sensors.TriggerSensor.onUndetectedTip">
+  onUndetectedTip
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/TriggerSensor.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent&lt;SensorEventArgs&gt; onUndetectedTip { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span>&lt;<a class="xref" href="ToolkitEngine.Sensors.SensorEventArgs.html">SensorEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_TriggerSensor_onUndetectedTipToTail_" data-uid="ToolkitEngine.Sensors.TriggerSensor.onUndetectedTipToTail*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_TriggerSensor_onUndetectedTipToTail" data-uid="ToolkitEngine.Sensors.TriggerSensor.onUndetectedTipToTail">
+  onUndetectedTipToTail
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/TriggerSensor.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent&lt;SensorEventArgs&gt; onUndetectedTipToTail { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UnityEvent</span>&lt;<a class="xref" href="ToolkitEngine.Sensors.SensorEventArgs.html">SensorEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ToolkitEngine_Sensors_TriggerSensor_CustomAddSignal_" data-uid="ToolkitEngine.Sensors.TriggerSensor.CustomAddSignal*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_TriggerSensor_CustomAddSignal_ToolkitEngine_Sensors_SensorEventArgs_" data-uid="ToolkitEngine.Sensors.TriggerSensor.CustomAddSignal(ToolkitEngine.Sensors.SensorEventArgs)">
+  CustomAddSignal(SensorEventArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/TriggerSensor.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void CustomAddSignal(SensorEventArgs args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="ToolkitEngine.Sensors.SensorEventArgs.html">SensorEventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ToolkitEngine_Sensors_TriggerSensor_CustomRemoveSignal_" data-uid="ToolkitEngine.Sensors.TriggerSensor.CustomRemoveSignal*"></a>
+
+  <h3 id="ToolkitEngine_Sensors_TriggerSensor_CustomRemoveSignal_ToolkitEngine_Sensors_SensorEventArgs_" data-uid="ToolkitEngine.Sensors.TriggerSensor.CustomRemoveSignal(ToolkitEngine.Sensors.SensorEventArgs)">
+  CustomRemoveSignal(SensorEventArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nrvllrgrs/toolkit.sensors/blob/master/Runtime/TriggerSensor.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void CustomRemoveSignal(SensorEventArgs args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="ToolkitEngine.Sensors.SensorEventArgs.html">SensorEventArgs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
 
 
 
