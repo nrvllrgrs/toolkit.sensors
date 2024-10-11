@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -33,17 +34,25 @@ namespace ToolkitEngine.Sensors
 		private GameObject m_reserver;
 		private GameObject m_occupant;
 
-        #endregion
+        private HashSet<BaseSensor> m_detectedBy = new();
 
-        #region Events
+		#endregion
 
-        [SerializeField]
+		#region Events
+
+		[SerializeField]
+		private UnityEvent<SensorEventArgs> m_onFirstDetection;
+
+		[SerializeField]
         private UnityEvent<SensorEventArgs> m_onSignalDetected;
 
 		[SerializeField]
 		private UnityEvent<SensorEventArgs> m_onSignalUndetected;
 
-        [SerializeField]
+		[SerializeField]
+		private UnityEvent<SensorEventArgs> m_onLastUndetection;
+
+		[SerializeField]
         private UnityEvent<MarkupEventArgs> m_onArrival;
 
         [SerializeField]
@@ -75,6 +84,13 @@ namespace ToolkitEngine.Sensors
         public GameObject reserver => m_reserver;
 
         /// <summary>
+        /// Indicates whether Markup is detected by any MarkupSensor
+        /// </summary>
+		public bool isDetected => m_detectedBy.Count > 0;
+
+		public UnityEvent<SensorEventArgs> onFirstDetection => m_onFirstDetection;
+
+        /// <summary>
         /// Invoked when this Markup is detected by any MarkupSensor
         /// </summary>
         public UnityEvent<SensorEventArgs> onSignalDetected => m_onSignalDetected;
@@ -83,6 +99,8 @@ namespace ToolkitEngine.Sensors
         /// Invoked when this Markup is undetected by any MarkupSensor
         /// </summary>
         public UnityEvent<SensorEventArgs> onSignalUndetected => m_onSignalUndetected;
+
+        public UnityEvent<SensorEventArgs> onLastUndetection => m_onLastUndetection;
 
         public UnityEvent<MarkupEventArgs> onArrival => m_onArrival;
         public UnityEvent<MarkupEventArgs> onDeparture => m_onDeparture;
@@ -96,10 +114,14 @@ namespace ToolkitEngine.Sensors
 		private void OnEnable()
         {
             SensorManager.CastInstance.Register(this);
+            m_onSignalDetected.AddListener(SignalDetected);
+            m_onSignalUndetected.AddListener(SignalUndetected);
         }
 
         private void OnDisable()
         {
+			m_onSignalDetected.RemoveListener(SignalDetected);
+			m_onSignalUndetected.RemoveListener(SignalUndetected);
 			SensorManager.CastInstance.Unregister(this);
 		}
 
@@ -172,6 +194,30 @@ namespace ToolkitEngine.Sensors
             return Equals(m_reserver, obj);
         }
 
-        #endregion
-    }
+		#endregion
+
+		#region Detection Methods
+
+        private void SignalDetected(SensorEventArgs e)
+        {
+            if (m_detectedBy.Count == 0)
+            {
+                m_onFirstDetection?.Invoke(e);
+            }
+            m_detectedBy.Add(e.sensor);
+        }
+
+        private void SignalUndetected(SensorEventArgs e)
+        {
+            m_detectedBy.Remove(e.sensor);
+            if (m_detectedBy.Count == 0)
+            {
+                m_onLastUndetection?.Invoke(e);
+            }
+        }
+
+        public bool IsDetectedBy(BaseSensor sensor) => m_detectedBy.Contains(sensor);
+
+		#endregion
+	}
 }

@@ -141,6 +141,7 @@ namespace ToolkitEngine.Sensors
         }
 
         public bool anySignal => m_signals.Count > 0;
+        public bool anySignalWithStrength => m_signals.Any(x => x.Value.strength > 0);
 
         public UnityEvent<SensorEventArgs> onFirstDetection => m_onFirstDetection;
         public UnityEvent<SensorEventArgs> onSignalDetected => m_onSignalDetected;

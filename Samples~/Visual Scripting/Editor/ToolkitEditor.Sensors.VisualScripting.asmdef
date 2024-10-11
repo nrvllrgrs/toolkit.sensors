@@ -2,10 +2,9 @@
     "name": "ToolkitEditor.Sensors.VisualScripting",
     "rootNamespace": "",
     "references": [
-        "Unity.VisualScripting.Core.Editor",
-        "Unity.VisualScripting.Flow.Editor",
-        "ToolkitEngine.Sensors",
-        "ToolkitEngine.Sensors.VisualScripting"
+        "GUID:5509a45a546d1324ebca3e80c7d699f6",
+        "GUID:bfcad32c96921f94a877b5f1e1277e0c",
+        "GUID:3f1f571dedb44f84b9692faef46a67d8"
     ],
     "includePlatforms": [
         "Editor"

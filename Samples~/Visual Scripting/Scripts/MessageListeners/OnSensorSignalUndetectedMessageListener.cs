@@ -7,7 +7,7 @@ namespace ToolkitEngine.Sensors.VisualScripting
     [AddComponentMenu("")]
     public class OnSensorSignalUndetectedMessageListener : MessageListener
     {
-        private void Start() => GetComponent<BaseSensor>()?.onSignalUndetected.AddListener((value) =>
+        private void Start() => GetComponent<ISignalDetectable>()?.onSignalUndetected.AddListener((value) =>
         {
             EventBus.Trigger(EventHooks.OnSensorSignalUndetected, gameObject, value);
         });

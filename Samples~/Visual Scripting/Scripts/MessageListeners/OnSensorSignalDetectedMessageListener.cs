@@ -1,13 +1,12 @@
 using UnityEngine;
 using Unity.VisualScripting;
-using EventHooks = ToolkitEngine.Sensors.EventHooks;
 
 namespace ToolkitEngine.Sensors.VisualScripting
 {
-    [AddComponentMenu("")]
+	[AddComponentMenu("")]
     public class OnSensorSignalDetectedMessageListener : MessageListener
     {
-        private void Start() => GetComponent<BaseSensor>()?.onSignalDetected.AddListener((value) =>
+        private void Start() => GetComponent<ISignalDetectable>()?.onSignalDetected.AddListener((value) =>
         {
             EventBus.Trigger(EventHooks.OnSensorSignalDetected, gameObject, value);
         });

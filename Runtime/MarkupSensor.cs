@@ -52,6 +52,10 @@ namespace ToolkitEngine.Sensors
 		public void Pulse()
 		{
 			m_pulse.Pulse(this);
+			m_onPulsed?.Invoke(new SensorEventArgs()
+			{
+				sensor = this,
+			});
 		}
 
 		protected void CustomPulse()
