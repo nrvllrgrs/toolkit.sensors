@@ -139,9 +139,9 @@ namespace ToolkitEngine.Sensors
                     break;
             }
 
-            if (!anySignal && SensorManager.Exists)
+            if (!anySignal)
             {
-                SensorManager.Instance.Unregister(this);
+                SensorManager.CastInstance.Unregister(this);
             }
         }
 
@@ -149,7 +149,7 @@ namespace ToolkitEngine.Sensors
         {
             if (!anySignal)
             {
-                SensorManager.Instance.Register(this);
+                SensorManager.CastInstance.Register(this);
             }
 
             if (!m_detectedLifetimes.ContainsKey(detected))

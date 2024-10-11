@@ -95,16 +95,13 @@ namespace ToolkitEngine.Sensors
 
 		private void OnEnable()
         {
-            SensorManager.Instance.Register(this);
+            SensorManager.CastInstance.Register(this);
         }
 
         private void OnDisable()
         {
-            if (SensorManager.Exists)
-            {
-				SensorManager.Instance.Unregister(this);
-            }
-        }
+			SensorManager.CastInstance.Unregister(this);
+		}
 
         public virtual bool Reserve(GameObject obj)
         {

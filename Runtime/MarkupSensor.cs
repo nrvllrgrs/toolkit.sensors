@@ -40,17 +40,13 @@ namespace ToolkitEngine.Sensors
 
 		private void OnEnable()
 		{
-			SensorManager.Instance.Register(this);
+			SensorManager.CastInstance.Register(this);
 		}
 
 		private void OnDisable()
 		{
 			ClearSignals();
-
-			if (SensorManager.Exists)
-			{
-				SensorManager.Instance.Unregister(this);
-			}
+			SensorManager.CastInstance.Unregister(this);
 		}
 
 		public void Pulse()
@@ -60,7 +56,7 @@ namespace ToolkitEngine.Sensors
 
 		protected void CustomPulse()
 		{
-			foreach (var markup in SensorManager.Instance.Get(gameObject, radius))
+			foreach (var markup in SensorManager.CastInstance.Get(gameObject, radius))
 			{
 				var detected = GetFilteredObject(markup.gameObject);
 				if (detected == null)

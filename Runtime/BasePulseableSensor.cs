@@ -36,17 +36,13 @@ namespace ToolkitEngine.Sensors
 
         private void OnEnable()
         {
-            SensorManager.Instance.Register(this);
+            SensorManager.CastInstance.Register(this);
         }
 
         private void OnDisable()
         {
             ClearSignals();
-
-            if (SensorManager.Exists)
-            {
-                SensorManager.Instance.Unregister(this);
-            }
+            SensorManager.CastInstance.Unregister(this);
         }
 
         public void Pulse()

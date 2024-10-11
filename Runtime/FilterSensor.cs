@@ -71,16 +71,13 @@ namespace ToolkitEngine.Sensors
         {
             // Wait until something is detected
             // No need to pulse if checking against an empty set
-            SensorManager.Instance.Register(this);
+            SensorManager.CastInstance.Register(this);
         }
 
         private void Sensor_NoDetection(SensorEventArgs e)
         {
-            if (SensorManager.Exists)
-            {
-                SensorManager.Instance.Unregister(this);
-                ClearSignals();
-            }
+            SensorManager.CastInstance.Unregister(this);
+            ClearSignals();
         }
 
         public void Pulse()

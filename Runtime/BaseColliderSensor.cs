@@ -90,7 +90,7 @@ namespace ToolkitEngine.Sensors
             }
         }
 
-        private void AddSignal(Collider collider)
+        protected void AddSignal(Collider collider)
         {
             var detected = GetFilteredObject(GetDetected(this, collider));
             if (detected == null)

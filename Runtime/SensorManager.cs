@@ -6,21 +6,44 @@ using UnityEngine;
 namespace ToolkitEngine.Sensors
 {
     [AddComponentMenu("Sensor/Sensor Manager")]
-    public class SensorManager : Singleton<SensorManager>
+    public class SensorManager : Subsystem<SensorManager>
     {
         #region Fields
 
-        private HashSet<Markup> m_markups = new();
-        private HashSet<SignalBroadcaster> m_broadcasters = new();
-        private HashSet<SignalSensor> m_signalSensors = new();
+        private HashSet<Markup> m_markups;
+        private HashSet<SignalBroadcaster> m_broadcasters;
+        private HashSet<SignalSensor> m_signalSensors;
 
-        private HashSet<IPulseableSensor> m_pulseableSensors = new();
+        private HashSet<IPulseableSensor> m_pulseableSensors;
 
-        #endregion
+		#endregion
 
-        #region Methods
+		#region Methods
 
-        public void Register(Markup markup)
+		protected override void Initialize()
+		{
+			base.Initialize();
+
+			m_markups = new();
+            m_broadcasters = new();
+            m_signalSensors = new();
+            m_pulseableSensors = new();
+
+		    LifecycleSubsystem.Register(this, LifecycleSubsystem.Phase.Update);
+			LifecycleSubsystem.Register(this, LifecycleSubsystem.Phase.FixedUpdate);
+			LifecycleSubsystem.Register(this, LifecycleSubsystem.Phase.LateUpdate);
+		}
+
+		protected override void Terminate()
+		{
+			base.Terminate();
+
+			LifecycleSubsystem.Unregister(this, LifecycleSubsystem.Phase.Update);
+			LifecycleSubsystem.Unregister(this, LifecycleSubsystem.Phase.FixedUpdate);
+			LifecycleSubsystem.Unregister(this, LifecycleSubsystem.Phase.LateUpdate);
+		}
+
+		public void Register(Markup markup)
         {
             if (markup == null)
                 return;
@@ -66,19 +89,19 @@ namespace ToolkitEngine.Sensors
             m_pulseableSensors.Remove(sensor);
         }
 
-        private void Update()
+        public override void Update()
         {
             BroadcastSignals(IsUpdateBroadcaster);
             PulseSensors(IsUpdateSensor);
         }
 
-        private void FixedUpdate()
+		public override void FixedUpdate()
         {
             BroadcastSignals(IsFixedUpdateBroadcaster);
             PulseSensors(IsFixedUpdateSensor);
         }
 
-        private void LateUpdate()
+        public override void LateUpdate()
         {
             if (m_signalSensors.Count > 0)
             {
