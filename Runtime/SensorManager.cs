@@ -142,6 +142,19 @@ namespace ToolkitEngine.Sensors
 
 			foreach (var markup in m_markups)
 			{
+                if (args != null && args.Length > 0 && !args.Contains(markup.type))
+                    continue;
+
+                float testSqrDistance = markup.radius == 0
+                    ? sqrDistance
+                    : Mathf.Pow(distance + markup.radius, 2f);
+                
+				if ((point - markup.transform.position).sqrMagnitude < testSqrDistance
+					&& (condition?.Invoke(markup) ?? true))
+				{
+					list.Add(markup);
+				}
+
 				if ((args == null || args.Length == 0 || args.Contains(markup.type))
 					&& (point - markup.transform.position).sqrMagnitude < sqrDistance
 					&& (condition?.Invoke(markup) ?? true))

@@ -31,6 +31,9 @@ namespace ToolkitEngine.Sensors
         [SerializeField]
         private MarkupType m_type;
 
+        [SerializeField, Min(0f)]
+        private float m_radius = 0f;
+
 		private GameObject m_reserver;
 		private GameObject m_occupant;
 
@@ -69,6 +72,8 @@ namespace ToolkitEngine.Sensors
 		#region Properties
 
 		public MarkupType type => m_type;
+
+        public float radius => m_radius;
 
         /// <summary>
         /// Indicates whether markup is currently occupied
@@ -217,6 +222,15 @@ namespace ToolkitEngine.Sensors
         }
 
         public bool IsDetectedBy(BaseSensor sensor) => m_detectedBy.Contains(sensor);
+
+		private void OnDrawGizmos()
+		{
+            if (m_radius == 0)
+                return;
+
+            Gizmos.color = Color.blue;
+			Gizmos.DrawWireSphere(transform.position, m_radius);
+		}
 
 		#endregion
 	}
