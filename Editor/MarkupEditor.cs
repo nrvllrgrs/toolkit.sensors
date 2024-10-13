@@ -10,6 +10,7 @@ namespace ToolkitEditor.Sensors
 
 		protected SerializedProperty m_type;
 		protected SerializedProperty m_radius;
+		protected SerializedProperty m_height;
 
 		// Events
 		protected SerializedProperty m_onFirstDetection;
@@ -29,6 +30,7 @@ namespace ToolkitEditor.Sensors
 		{
 			m_type = serializedObject.FindProperty(nameof(m_type));
 			m_radius = serializedObject.FindProperty(nameof(m_radius));
+			m_height = serializedObject.FindProperty(nameof(m_height));
 
 			// Events
 			m_onFirstDetection = serializedObject.FindProperty(nameof (m_onFirstDetection));
@@ -45,6 +47,7 @@ namespace ToolkitEditor.Sensors
 		{
 			EditorGUILayout.PropertyField(m_type);
 			EditorGUILayout.PropertyField(m_radius);
+			EditorGUILayout.PropertyField(m_height);
 		}
 
 		protected override void DrawEvents()

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting.YamlDotNet.Core;
 using UnityEngine;
 
 namespace ToolkitEngine.Sensors
@@ -118,53 +119,154 @@ namespace ToolkitEngine.Sensors
 
         #region Markup Methods
 
-        public Markup[] Get(GameObject obj, float distance, Func<Markup, bool> condition = null)
+        public Markup[] Get(GameObject obj, float radius, float height, Func<Markup, bool> condition = null)
         {
-            return Get(obj, distance, condition, null);
+            return Get(obj, radius, height, condition, null);
         }
-        public Markup[] Get(GameObject obj, float distance, Func<Markup, bool> condition, params MarkupType[] args)
+        public Markup[] Get(GameObject obj, float radius, float height, Func<Markup, bool> condition, params MarkupType[] args)
         {
             if (obj == null)
                 return null;
 
-            return Get(obj.transform.position, distance, condition, args);
+            return Get(obj.transform.position, radius, height, condition, args);
         }
 
-		public Markup[] Get(Vector3 point, float distance, Func<Markup, bool> condition = null)
+		public Markup[] Get(Vector3 point, float radius, float height, Func<Markup, bool> condition = null)
         {
-            return Get(point, distance, condition, null);
+            return Get(point, radius, height, condition, null);
         }
 
-		public Markup[] Get(Vector3 point, float distance, Func<Markup, bool> condition, params MarkupType[] args)
+		public Markup[] Get(Vector3 point, float radius, float height, Func<Markup, bool> condition, params MarkupType[] args)
 		{
 			var list = new List<Markup>();
-			var sqrDistance = distance * distance;
+			var sqrDistance = radius * radius;
+
+            float lowerSensor = 0f, upperSensor = 0f;
+            if (height > 0f)
+            {
+                GetVerticalRange(point.y, height, out lowerSensor, out upperSensor);
+            }
 
 			foreach (var markup in m_markups)
 			{
+                // Markup type does not exist as valid in sensor, skip
                 if (args != null && args.Length > 0 && !args.Contains(markup.type))
                     continue;
 
-                float testSqrDistance = markup.radius == 0
-                    ? sqrDistance
-                    : Mathf.Pow(distance + markup.radius, 2f);
-                
-				if ((point - markup.transform.position).sqrMagnitude < testSqrDistance
-					&& (condition?.Invoke(markup) ?? true))
-				{
-					list.Add(markup);
-				}
+				// Sensor is spherical...
+				if (height == 0f)
+                {
+                    // Markup is spherical (or a point)...
+                    if (markup.height == 0f)
+                    {
+                        float testSqrDistance = markup.radius == 0
+                            ? sqrDistance
+                            : Mathf.Pow(radius + markup.radius, 2f);
 
-				if ((args == null || args.Length == 0 || args.Contains(markup.type))
-					&& (point - markup.transform.position).sqrMagnitude < sqrDistance
-					&& (condition?.Invoke(markup) ?? true))
-				{
-					list.Add(markup);
+                        if ((point - markup.transform.position).sqrMagnitude < testSqrDistance
+                            && (condition?.Invoke(markup) ?? true))
+                        {
+                            list.Add(markup);
+                        }
+                    }
+					// Markup is cylindrical (or a line)...
+					else
+					{
+						GetVerticalRange(markup.transform.position.y, markup.height, out float lowerMarkup, out float upperMarkup);
+						if (!IntersectSphereAndCylinder(point, radius, markup.transform.position, markup.radius, lowerMarkup, upperMarkup))
+							continue;
+
+						if (condition?.Invoke(markup) ?? true)
+						{
+							list.Add(markup);
+						}
+					}
+				}
+				// Sensor is cylindrical..
+				else
+                {
+					// Markup is cylindrical (or a point or line)...
+					if (markup.height > 0f || markup.radius == 0f)
+					{
+                        // Outside of vertical range, skip
+                        GetVerticalRange(markup.transform.position.y, markup.height, out float lowerMarkup, out float upperMarkup);
+                        if (!VerticalRangeOverlaps(lowerSensor, upperSensor, lowerMarkup, upperMarkup))
+                            continue;
+
+						// Circles on X-Z plane do not intersect, skip
+						var point2D = new Vector2(point.x, point.z);
+						var markupPosition2D = new Vector2(markup.transform.position.x, markup.transform.position.z);
+						if (!IntersectCircles(point2D, radius, markupPosition2D, markup.radius))
+                            continue;
+
+                        if (condition?.Invoke(markup) ?? true)
+                        {
+                            list.Add(markup);
+                        }
+                    }
+                    // Markup is spherical...
+                    else
+                    {
+                        if (!IntersectSphereAndCylinder(markup.transform.position, markup.radius, point, radius, lowerSensor, upperSensor))
+                            continue;
+
+						if (condition?.Invoke(markup) ?? true)
+						{
+							list.Add(markup);
+						}
+					}
 				}
 			}
-
 			return list.ToArray();
 		}
+
+		private bool IntersectCircles(Vector2 a, float r, Vector2 b, float q)
+		{
+			return (a - b).sqrMagnitude < Mathf.Pow(r + q, 2f);
+		}
+
+		private bool IntersectSphereAndCylinder(Vector3 spherePosition, float sphereRadius, Vector3 cylinderPosition, float cylinderRadius, float cylinderLower, float cylinderUpper)
+        {
+            float capRadius = 0f;
+
+            // Cylinder intersects through center of sphere
+            if (cylinderLower <= spherePosition.y && spherePosition.y <= cylinderUpper)
+            {
+                capRadius = sphereRadius;
+            }
+            // Cylinder only intersects through bottom of sphere
+            else if (cylinderLower <= spherePosition.y - sphereRadius && spherePosition.y - sphereRadius <= cylinderUpper)
+            {
+                // Calculate distance between top of cylinder to center
+                float h = sphereRadius - Math.Abs(spherePosition.y - cylinderUpper);
+                capRadius = Mathf.Sqrt(h * (2f * sphereRadius - h));
+            }
+            // Cylinder only intersect through top of sphere
+            else if (cylinderLower <= spherePosition.y + sphereRadius && spherePosition.y + sphereRadius <= cylinderUpper)
+            {
+				// Calculate distance between bottom of cylinder to center
+				float h = sphereRadius - Math.Abs(spherePosition.y - cylinderLower);
+				capRadius = Mathf.Sqrt(h * (2f * sphereRadius - h));
+			}
+
+            if (capRadius == 0f)
+                return false;
+
+            var spherePosition2D = new Vector2(spherePosition.x, spherePosition.z);
+            var cylinderPosition2D = new Vector2(cylinderPosition.x, cylinderPosition.z);
+            return IntersectCircles(spherePosition2D, capRadius, cylinderPosition2D, cylinderRadius);
+        }
+
+        private bool VerticalRangeOverlaps(float lowerSensor, float upperSensor, float lowerMarkup, float upperMarkup)
+        {
+            return Mathf.Max(lowerSensor, lowerMarkup) <= Mathf.Min(upperSensor, upperMarkup);
+		}
+
+        private void GetVerticalRange(float y, float height, out float min, out float max)
+        {
+            min = y - height * 0.5f;
+            max = y + height * 0.5f;
+        }
 
 		#endregion
 

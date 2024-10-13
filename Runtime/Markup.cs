@@ -2,6 +2,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
 namespace ToolkitEngine.Sensors
 {
     public class MarkupEventArgs : System.EventArgs
@@ -33,6 +37,9 @@ namespace ToolkitEngine.Sensors
 
         [SerializeField, Min(0f)]
         private float m_radius = 0f;
+
+		[SerializeField, Min(0f)]
+		private float m_height = 0f;
 
 		private GameObject m_reserver;
 		private GameObject m_occupant;
@@ -74,6 +81,7 @@ namespace ToolkitEngine.Sensors
 		public MarkupType type => m_type;
 
         public float radius => m_radius;
+        public float height => m_height;
 
         /// <summary>
         /// Indicates whether markup is currently occupied
@@ -223,15 +231,34 @@ namespace ToolkitEngine.Sensors
 
         public bool IsDetectedBy(BaseSensor sensor) => m_detectedBy.Contains(sensor);
 
+		#endregion
+
+		#region Editor-Only
+#if UNITY_EDITOR
+
 		private void OnDrawGizmos()
 		{
-            if (m_radius == 0)
-                return;
+			Gizmos.color = Color.blue;
 
-            Gizmos.color = Color.blue;
-			Gizmos.DrawWireSphere(transform.position, m_radius);
+			if (m_radius > 0f)
+            {
+				if (m_height == 0f)
+				{
+					Gizmos.DrawWireSphere(transform.position, m_radius);
+				}
+                else
+                {
+					GizmosUtil.DrawCylinder(transform.position, m_radius, m_height, Color.blue);
+				}
+			}
+            else if (m_height > 0f)
+            {
+                var offset = Vector3.up * (m_height * 0.5f);
+				Gizmos.DrawLine(transform.position - offset, transform.position + offset);
+			}
 		}
 
+#endif
 		#endregion
 	}
 }

@@ -11,8 +11,11 @@ namespace ToolkitEngine.Sensors
 		[SerializeField]
 		protected SensorPulse m_pulse;
 
-		[Min(0f)]
-		public float radius = 5f;
+		[SerializeField, Min(0f)]
+		private float m_radius = 5f;
+
+		[SerializeField, Min(0f)]
+		private float m_height;
 
 		[SerializeField, Tooltip("Invoked when pulsed.")]
 		private UnityEvent<SensorEventArgs> m_onPulsed;
@@ -28,6 +31,8 @@ namespace ToolkitEngine.Sensors
 		#region Properties
 
 		public PulseMode pulseMode => m_pulse.pulseMode;
+		public float radius => m_radius;
+		public float height => m_height;
 
 		#endregion
 
@@ -60,7 +65,7 @@ namespace ToolkitEngine.Sensors
 
 		protected void CustomPulse()
 		{
-			foreach (var markup in SensorManager.CastInstance.Get(gameObject, radius))
+			foreach (var markup in SensorManager.CastInstance.Get(gameObject, m_radius, m_height))
 			{
 				var detected = GetFilteredObject(markup.gameObject);
 				if (detected == null)
@@ -99,8 +104,18 @@ namespace ToolkitEngine.Sensors
 
 		private void OnDrawGizmosSelected()
 		{
-			Gizmos.color = Color.green;
-			Gizmos.DrawWireSphere(transform.position, radius);
+			if (m_radius == 0)
+				return;
+
+			if (m_height == 0f)
+			{
+				Gizmos.color = Color.green;
+				Gizmos.DrawWireSphere(transform.position, m_radius);
+			}
+			else if (m_radius > 0f)
+			{
+				GizmosUtil.DrawCylinder(transform.position, m_radius, m_height, Color.green);
+			}
 		}
 
 #endif

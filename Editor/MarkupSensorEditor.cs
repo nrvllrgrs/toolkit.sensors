@@ -12,6 +12,7 @@ namespace ToolkitEditor.Sensors
 		protected SerializedProperty m_pulse;
 		protected SerializedProperty m_pulseMode;
 		protected SerializedProperty m_radius;
+		protected SerializedProperty m_height;
 
 		// Events
 		protected SerializedProperty m_onPulsed;
@@ -26,7 +27,8 @@ namespace ToolkitEditor.Sensors
 
 			m_pulse = serializedObject.FindProperty(nameof(m_pulse));
 			m_pulseMode = m_pulse.FindPropertyRelative("pulseMode");
-			m_radius = serializedObject.FindProperty("radius");
+			m_radius = serializedObject.FindProperty(nameof(m_radius));
+			m_height = serializedObject.FindProperty(nameof(m_height));
 
 			// Events
 			m_onPulsed = serializedObject.FindProperty(nameof(m_onPulsed));
@@ -40,6 +42,7 @@ namespace ToolkitEditor.Sensors
 			EditorGUILayout.Separator();
 
 			EditorGUILayout.PropertyField(m_radius);
+			EditorGUILayout.PropertyField(m_height);
 		}
 
 		protected override void OnSignalsInspectorGUI()
