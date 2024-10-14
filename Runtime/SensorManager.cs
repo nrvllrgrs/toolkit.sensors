@@ -1,12 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Unity.VisualScripting.YamlDotNet.Core;
 using UnityEngine;
 
 namespace ToolkitEngine.Sensors
 {
-    [AddComponentMenu("Sensor/Sensor Manager")]
+	[AddComponentMenu("Sensor/Sensor Manager")]
     public class SensorManager : Subsystem<SensorManager>
     {
         #region Fields
