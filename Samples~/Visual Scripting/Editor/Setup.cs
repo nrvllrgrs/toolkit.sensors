@@ -32,6 +32,7 @@ namespace ToolkitEditor.Sensors.VisualScripting
 				typeof(SensorEventArgs),
 				typeof(MarkupEventArgs),
 				typeof(PerceptionEventArgs),
+				typeof(ISignalDetectable),
 			};
 
 			ToolkitEditor.VisualScripting.Setup.Initialize("ToolkitEngine.Sensors", types);

@@ -109,9 +109,13 @@ namespace ToolkitEngine.Sensors
         {
             if (m_detectedBy.Count == 0)
             {
-                m_onFirstDetection?.Invoke(e);
+				m_detectedBy.Add(e.sensor);
+				m_onFirstDetection?.Invoke(e);
             }
-            m_detectedBy.Add(e.sensor);
+            else
+            {
+				m_detectedBy.Add(e.sensor);
+			}
         }
 
         private void SignalUndetected(SensorEventArgs e)
