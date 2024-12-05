@@ -10,7 +10,10 @@ namespace ToolkitEngine.Sensors
         [SerializeField]
         protected bool m_isOn = true;
 
-        private Dictionary<Collider, int> m_inSet = new();
+		[SerializeField, Tooltip("Indicates whether sensor is turned off when signal is detected.")]
+		private bool m_stopOnDetection;
+
+		private Dictionary<Collider, int> m_inSet = new();
         private Dictionary<Collider, GameObject> m_map = new();
 
         #endregion
@@ -68,7 +71,17 @@ namespace ToolkitEngine.Sensors
             AddSignal(other);
         }
 
-        protected void Remove(Collider other)
+		protected override void CustomAddSignal(SensorEventArgs args)
+		{
+			base.CustomAddSignal(args);
+
+			if (m_stopOnDetection)
+            {
+                isOn = false;
+            }
+		}
+
+		protected void Remove(Collider other)
         {
             if (m_inSet.TryGetValue(other, out int count))
             {

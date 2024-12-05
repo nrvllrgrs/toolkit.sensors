@@ -6,9 +6,9 @@ namespace ToolkitEngine.Sensors
     [AddComponentMenu("Sensor/Trigger Sensor")]
     public class TriggerSensor : BaseColliderSensor
     {
-        #region Fields
+		#region Fields
 
-        private bool m_enteredFromTail = false;
+		private bool m_enteredFromTail = false;
 
 		#endregion
 
@@ -69,7 +69,9 @@ namespace ToolkitEngine.Sensors
 				m_enteredFromTail = false;
 				m_onDetectedTip?.Invoke(args);
 			}
-        }
+
+			base.CustomAddSignal(args);
+		}
 
         protected override void CustomRemoveSignal(SensorEventArgs args)
         {

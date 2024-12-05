@@ -9,6 +9,7 @@ namespace ToolkitEditor.Sensors
         #region Fields
 
         protected SerializedProperty m_isOn;
+        protected SerializedProperty m_stopOnDetection;
 
         #endregion
 
@@ -18,11 +19,13 @@ namespace ToolkitEditor.Sensors
         {
             base.OnEnable();
             m_isOn = serializedObject.FindProperty(nameof(m_isOn));
+            m_stopOnDetection = serializedObject.FindProperty(nameof(m_stopOnDetection));
         }
 
         protected override void OnCustomInspectorGUI()
         {
             EditorGUILayout.PropertyField(m_isOn);
+            EditorGUILayout.PropertyField(m_stopOnDetection);
             base.OnCustomInspectorGUI();
         }
 
