@@ -31,7 +31,9 @@ namespace ToolkitEditor.Sensors
 
             m_pulse = serializedObject.FindProperty(nameof(m_pulse));
             m_pulseMode = m_pulse.FindPropertyRelative("pulseMode");
-        }
+
+            m_onPulsed = serializedObject.FindProperty(nameof(m_onPulsed));
+		}
 
         protected override void OnCustomInspectorGUI()
         {
