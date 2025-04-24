@@ -7,7 +7,7 @@ namespace ToolkitEditor.Sensors.VisualScripting
 {
 	[InitializeOnLoad]
 	public static class Setup
-    {
+	{
 		static Setup()
 		{
 			var types = new List<Type>()
