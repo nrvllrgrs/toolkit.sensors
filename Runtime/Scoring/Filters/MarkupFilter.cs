@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
+using ToolkitEngine.Scoring;
 
-namespace ToolkitEngine.Sensors
+namespace ToolkitEngine.Sensors.Scoring
 {
 	[EvaluableCategory("Sensors")]
 	public class MarkupFilter : BaseFilter

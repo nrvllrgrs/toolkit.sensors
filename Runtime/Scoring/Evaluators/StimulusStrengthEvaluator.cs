@@ -1,7 +1,8 @@
 using UnityEngine;
+using ToolkitEngine.Scoring;
 using static ToolkitEngine.Sensors.Perception;
 
-namespace ToolkitEngine.Sensors
+namespace ToolkitEngine.Sensors.Scoring
 {
 	[EvaluableCategory("Sensors")]
 	public class StimulusStrengthEvaluator : BaseEvaluator
